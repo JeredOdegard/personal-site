@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Find more <Link href="/about"><a>about me!</a></Link>
+          Learn more <Link href="/about"><a>about me!</a></Link>
         </h1>
 
         <p className={styles.description}>
