@@ -1,5 +1,5 @@
 // Build time function
-export async function getStaticProps() {
+export async function getServerSideProps() {
   // const res = await fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Ffeeds.transistor.fm%2Fjered-o-show");
   // const episodes = await res.json();
 
