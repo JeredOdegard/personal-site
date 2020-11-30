@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function About() {
+function About() {
   return (
     <>
       <h1>About page</h1>
@@ -12,3 +12,5 @@ export default function About() {
     </>
   );
 }
+
+export default About;
