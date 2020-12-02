@@ -25,5 +25,8 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5"
-  }
+  },
+  "include": [
+    "components"
+  ]
 }
