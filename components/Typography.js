@@ -9,3 +9,9 @@ export function Subtitle({ children }) {
     <h2 className="text-lg font-extrabold my-2 text-gray-400">{children}</h2>
   )
 }
+
+export function SectionTitle({ children }) {
+  return (
+    <h3 className="text-lg font-extrabold my-2 text-gray-400">{children}</h3>
+  )
+}

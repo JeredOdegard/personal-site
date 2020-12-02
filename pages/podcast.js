@@ -1,7 +1,7 @@
 import Head from "next/head"
 
 import NavBar from "../components/navbar"
-import { Headline, Subtitle } from "../components/typography"
+import { Headline, Subtitle, SectionTitle } from "../components/typography"
 
 export async function getStaticProps() {
   // Fetch Jered O Show RSS Feed
@@ -46,7 +46,7 @@ export default function Podcast({ podcast }) {
 
         </section>
 
-        <Subtitle>Recent episodes</Subtitle>
+        <SectionTitle>Recent episodes</SectionTitle>
 
         <EpisodeList feed={podcast} />
 
@@ -66,9 +66,9 @@ function EpisodeList({ feed, children }) {
             </a>
           </div>
           <div className="overflow-ellipsis overflow-hidden">
-            <h3 className="font-bold text-xs sm:text-sm uppercase tracking-wide text-gray-900">
+            <h4 className="font-bold text-xs sm:text-sm uppercase tracking-wide text-gray-900">
               <a href={episode.link}>{episode.title}</a>
-            </h3>
+            </h4>
             <div className ="text-sm text-gray-500 max-h-10">
               {episode.content}
             </div>
