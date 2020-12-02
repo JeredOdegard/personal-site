@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-import NavBar from "components/navbar"
+import NavBar from "components/NavBar.js"
 import { Headline, Subtitle, SectionTitle } from "components/typography"
 
 export default function Home() {
