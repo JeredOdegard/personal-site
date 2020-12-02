@@ -7,7 +7,6 @@ module.exports = {
     		'sm': '375px'
     	},
     	maxWidth: {
-    		'xl': '1024px'
     	}
     },
   },

@@ -14,7 +14,7 @@ export async function getStaticProps() {
 
 export default function Podcast({ podcast }) {
   return (
-    <div className="min-w-sm">
+    <div className="min-w-sm antialiased">
       {console.dir(podcast)}
       <Head>
         <title>Podcast - Jered Odegard</title>
@@ -22,13 +22,9 @@ export default function Podcast({ podcast }) {
       </Head>
 
       <header className="flex justify-between sm:justify-start sm:space-x-8 items-center shadow mb-4">
-        <div className="md:h-20 md:w-16 bg-black flex items-center justify-center">
-          <svg className="h-14 w-14" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-            <g id="Artboard" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-              <g id="logo" transform="translate(19.000000, 17.000000)" fill="#ffffff" fill-rule="nonzero">
-                <path d="M3.43,30.196 L6.778,26.56 C7.714,27.28 8.86,27.82 10.216,28.18 C11.572,28.54 12.994,28.72 14.482,28.72 C16.498,28.72 18.37,28.396 20.098,27.748 C21.826,27.1 23.326,26.182 24.598,24.994 C25.87,23.806 26.866,22.372 27.586,20.692 C28.306,19.012 28.666,17.152 28.666,15.112 C28.666,11.632 27.61,8.728 25.498,6.4 L25.498,6.4 L28.702,2.944 L25.318,0.028 L22.078,3.7 C20.998,3.076 19.828,2.602 18.568,2.278 C17.308,1.954 15.958,1.792 14.518,1.792 C12.502,1.792 10.624,2.104 8.884,2.728 C7.144,3.352 5.644,4.24 4.384,5.392 C3.124,6.544 2.134,7.942 1.414,9.586 C0.694,11.23 0.334,13.072 0.334,15.112 C0.334,16.816 0.592,18.394 1.108,19.846 C1.624,21.298 2.374,22.588 3.358,23.716 L3.358,23.716 L0.046,27.316 L3.43,30.196 Z M9.298,17.452 C9.082,16.924 8.974,16.18 8.974,15.22 C8.974,14.428 9.088,13.672 9.316,12.952 C9.544,12.232 9.886,11.596 10.342,11.044 C10.798,10.492 11.374,10.048 12.07,9.712 C12.766,9.376 13.57,9.208 14.482,9.208 C15.298,9.208 15.982,9.316 16.534,9.532 L16.534,9.532 L9.298,17.452 Z M14.41,21.124 C14.026,21.124 13.648,21.1 13.276,21.052 C12.904,21.004 12.586,20.92 12.322,20.8 L12.322,20.8 L19.558,12.88 C19.798,13.48 19.918,14.236 19.918,15.148 C19.918,15.94 19.804,16.696 19.576,17.416 C19.348,18.136 19.006,18.772 18.55,19.324 C18.094,19.876 17.518,20.314 16.822,20.638 C16.126,20.962 15.322,21.124 14.41,21.124 Z" id="Ø"></path>
-              </g>
-            </g>
+        <div className="h-14 w-14 md:h-20 md:w-16 bg-black flex items-center justify-center fill-current text-white">
+          <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path d="M5.384 31.168l3.348-3.636c.936.72 2.082 1.26 3.438 1.62 1.356.36 2.778.54 4.266.54 2.016 0 3.888-.324 5.616-.972 1.728-.648 3.228-1.566 4.5-2.754 1.272-1.188 2.268-2.622 2.988-4.302.72-1.68 1.08-3.54 1.08-5.58 0-3.48-1.056-6.384-3.168-8.712l3.204-3.456L27.272 1l-3.24 3.672a13.895 13.895 0 00-3.51-1.422c-1.26-.324-2.61-.486-4.05-.486-2.016 0-3.894.312-5.634.936-1.74.624-3.24 1.512-4.5 2.664-1.26 1.152-2.25 2.55-2.97 4.194-.72 1.644-1.08 3.486-1.08 5.526 0 1.704.258 3.282.774 4.734a11.878 11.878 0 002.25 3.87L2 28.288l3.384 2.88zm5.868-12.744c-.216-.528-.324-1.272-.324-2.232 0-.792.114-1.548.342-2.268.228-.72.57-1.356 1.026-1.908a5.054 5.054 0 011.728-1.332c.696-.336 1.5-.504 2.412-.504.816 0 1.5.108 2.052.324l-7.236 7.92zm5.112 3.672c-.384 0-.762-.024-1.134-.072a3.343 3.343 0 01-.954-.252l7.236-7.92c.24.6.36 1.356.36 2.268 0 .792-.114 1.548-.342 2.268a5.631 5.631 0 01-1.026 1.908 4.867 4.867 0 01-1.728 1.314c-.696.324-1.5.486-2.412.486z" fill-rule="nonzero"/>
           </svg>
         </div>
 
@@ -47,29 +43,39 @@ export default function Podcast({ podcast }) {
         </button>
       </header>
 
-      <main className="mx-4">
-        <section className="flex space-x-4">
-          <a className="inline-block flex-shrink-0" href={podcast.feedUrl} title={podcast.title}>
-            <img className="w-28 h-28 rounded" src={podcast.image.url} title={podcast.image.title} />
-          </a>
-          <div>
-            <h1 className="text-xl mb-1 md:text-3xl md:mb-2 font-extrabold">{podcast.title}</h1>
-            <p className="text-xs md:text-sm w-4/5 text-gray-500">{podcast.description}</p>
+      <main className="px-4 max-w-screen-lg mx-auto">
+
+        <h1 className="text-4xl font-black mb-8 mt-12 text-gray-900">Podcast</h1>
+
+        <section className="flex space-x-4 items-start sm:items-center">
+          <div className="flex-shrink-0">
+            <a href={podcast.feedUrl} title={podcast.title}>
+              <img className="w-28 h-28 rounded shadow-2xl" src={podcast.image.url} title={podcast.image.title} />
+            </a>
           </div>
+
+          <figure className="w-screen">
+            <div className="block sm:flex justify-start md:justify-between items-center w-full">
+              <h2 className="text-xl mb-2 sm:mb-0 md:text-2xl font-extrabold block sm:inline-block text-gray-900">{podcast.title}</h2>
+              <a href="https://open.spotify.com/show/3S8KYEw9WWBVXiXu4ebA6M"><span className="sm:ml-3 sm:mb-0 mb-2 text-xs bg-indigo-600 hover:bg-indigo-500 text-white uppercase font-bold px-4 py-2 tracking-wider shadow-lg rounded inline-block">Subscribe</span></a>
+            </div>
+            <p className="text-xs md:text-sm max-w-xl text-gray-500 mt-2 sm:mt-3 inline-block">{podcast.description}</p>
+          </figure>
+
         </section>
 
         <section className="space-y-4 pt-6 pb-6">
           {podcast.items.map((episode, index) => (
-            <div className="flex items-center justify-start w-auto h-28 space-x-4 rounded shadow-md p-4 border border-gray-200 bg-white max-w-xl" key={index}>
+            <div className="flex items-center justify-start w-auto h-28 space-x-4 rounded shadow-md p-4 border border-gray-200 bg-white" key={index}>
               <div className="flex-shrink-0">
                 <a href={episode.link}>
                   <img src={episode.itunes.image} alt={episode.title} className="h-20 w-20 rounded" />
                 </a>
               </div>
               <div className="overflow-ellipsis overflow-hidden">
-                <div className="font-bold text-xs sm:text-sm uppercase tracking-wide">
+                <h3 className="font-bold text-xs sm:text-sm uppercase tracking-wide text-gray-900">
                   <a href={episode.link}>{episode.title}</a>
-                </div>
+                </h3>
                 <div className ="text-sm text-gray-500 max-h-10">
                   {episode.content}
                 </div>

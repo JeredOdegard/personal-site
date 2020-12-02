@@ -1,11 +1,11 @@
-import Head from "next/head";
+import Head from 'next/head';
 import Link from "next/link";
 
-export default function Home() {
+function Blog() {
   return (
     <div className="min-w-sm antialiased">
       <Head>
-        <title>Home - Jered Odegard</title>
+        <title>Blog - Jered Odegard</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
@@ -17,10 +17,10 @@ export default function Home() {
         </div>
 
         <nav className="hidden sm:flex justify-between space-x-6 text-sm text-gray-500 font-medium">
-          <Link href="/"><a className="text-gray-900 font-extrabold border-b-4 border-indigo-600 -mb-2 px-2">Home</a></Link>
+          <Link href="/"><a className="hover:text-indigo-600 px-2">Home</a></Link>
           <Link href="/coaching"><a className="hover:text-indigo-600 px-2">Coaching</a></Link>
           <Link href="/podcast"><a className="hover:text-indigo-600 px-2">Podcast</a></Link>
-          <Link href="/blog"><a className="hover:text-indigo-600 px-2">Blog</a></Link>
+          <Link href="/blog"><a className="text-gray-900 font-extrabold border-b-4 border-indigo-600 -mb-2 px-2">Blog</a></Link>
           <Link href="/about"><a className="hover:text-indigo-600 px-2">About</a></Link>
         </nav>
 
@@ -32,8 +32,10 @@ export default function Home() {
       </header>
 
       <main className="px-4 max-w-screen-lg mx-auto">
-        <h1 className="text-4xl font-black mb-8 mt-12 leading-tight text-gray-900">Hello.</h1>
+        <h1 className="text-4xl font-black mb-8 mt-12 leading-tight text-gray-900">Blog</h1>
       </main>
     </div>
-  )
+  );
 }
+
+export default Blog;
