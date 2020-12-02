@@ -1,6 +1,7 @@
 import Head from "next/head"
 
 import NavBar from "../components/navbar"
+import { Headline, Subtitle } from "../components/typography"
 
 export async function getStaticProps() {
   // Fetch Jered O Show RSS Feed
@@ -26,9 +27,9 @@ export default function Podcast({ podcast }) {
 
       <main className="px-4 max-w-screen-lg mx-auto">
 
-        <h1 className="text-4xl font-black mb-8 mt-12 text-gray-900">Podcast</h1>
+        <Headline>Podcast</Headline>
 
-        <section className="flex space-x-4 items-start sm:items-center">
+        <section className="flex space-x-4 items-start sm:items-center pb-6">
           <div className="flex-shrink-0">
             <a href={podcast.feedUrl} title={podcast.title}>
               <img className="w-28 h-28 rounded shadow-2xl" src={podcast.image.url} title={podcast.image.title} />
@@ -45,33 +46,42 @@ export default function Podcast({ podcast }) {
 
         </section>
 
-        <section className="space-y-4 pt-6 pb-6">
-          {podcast.items.map((episode, index) => (
-            <div className="flex items-center justify-start w-auto h-28 space-x-4 rounded shadow-md p-4 border border-gray-200 bg-white" key={index}>
-              <div className="flex-shrink-0">
-                <a href={episode.link}>
-                  <img src={episode.itunes.image} alt={episode.title} className="h-20 w-20 rounded" />
-                </a>
-              </div>
-              <div className="overflow-ellipsis overflow-hidden">
-                <h3 className="font-bold text-xs sm:text-sm uppercase tracking-wide text-gray-900">
-                  <a href={episode.link}>{episode.title}</a>
-                </h3>
-                <div className ="text-sm text-gray-500 max-h-10">
-                  {episode.content}
-                </div>
-              </div>
-              <div className="text-gray-700 text-sm font-medium hover:text-indigo-600 flex-shrink-0">
-                <a href={episode.link}>
-                  <svg className="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                </svg>
-                </a>
-              </div>
-            </div>
-          ))}
-        </section>
+        <Subtitle>Recent episodes</Subtitle>
+
+        <EpisodeList feed={podcast} />
+
       </main>
     </div>
+  )
+}
+
+function EpisodeList({ feed, children }) {
+  return (
+    <section className="space-y-4 pt-2 pb-6">
+      {feed.items.map((episode, index) => (
+        <div className="flex items-center justify-start w-auto h-28 space-x-4 rounded shadow-md p-4 border border-gray-200 bg-white" key={index}>
+          <div className="flex-shrink-0">
+            <a href={episode.link}>
+              <img src={episode.itunes.image} alt={episode.title} className="h-20 w-20 rounded" />
+            </a>
+          </div>
+          <div className="overflow-ellipsis overflow-hidden">
+            <h3 className="font-bold text-xs sm:text-sm uppercase tracking-wide text-gray-900">
+              <a href={episode.link}>{episode.title}</a>
+            </h3>
+            <div className ="text-sm text-gray-500 max-h-10">
+              {episode.content}
+            </div>
+          </div>
+          <div className="text-gray-700 text-sm font-medium hover:text-indigo-600 flex-shrink-0">
+            <a href={episode.link}>
+              <svg className="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+            </svg>
+            </a>
+          </div>
+        </div>
+      ))}
+    </section>
   )
 }
