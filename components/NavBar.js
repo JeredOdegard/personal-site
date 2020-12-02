@@ -3,10 +3,10 @@ import NavItem from "./navitem"
 import { useRouter } from "next/router"
 
 export default function NavBar({ children }) {
+  // Get current page /{pathname}
+  const currentPath = useRouter().pathname
 
-  const router = useRouter()
-  const pathname = router.pathname
-
+  // Top level navigation
   const homeUrl = "/"
   const coachingUrl = "/coaching"
   const podcastUrl = "/podcast"
@@ -14,7 +14,7 @@ export default function NavBar({ children }) {
   const aboutUrl = "/about"
 
   return (
-    <header className="flex justify-between sm:justify-start sm:space-x-8 items-center shadow mb-4">
+    <header className="flex justify-between sm:justify-start sm:space-x-8 items-center shadow mb-4 bg-white">
 
       <div className="h-14 w-14 md:h-20 md:w-16 bg-black flex items-center justify-center fill-current text-white">
         <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -23,11 +23,11 @@ export default function NavBar({ children }) {
       </div>
 
       <Nav>
-        <NavItem href={homeUrl} isActive={pathname === homeUrl ? true : false}>Home</NavItem>
-        <NavItem href={coachingUrl} isActive={pathname === coachingUrl ? true : false}>Coaching</NavItem>
-        <NavItem href={podcastUrl} isActive={pathname === podcastUrl ? true : false}>Podcast</NavItem>
-        <NavItem href={blogUrl} isActive={pathname === blogUrl ? true : false}>Blog</NavItem>
-        <NavItem href={aboutUrl} isActive={pathname === aboutUrl ? true : false}>About</NavItem>
+        <NavItem href={homeUrl} isActive={currentPath === homeUrl ? true : false}>Home</NavItem>
+        <NavItem href={coachingUrl} isActive={currentPath === coachingUrl ? true : false}>Coaching</NavItem>
+        <NavItem href={podcastUrl} isActive={currentPath === podcastUrl ? true : false}>Podcast</NavItem>
+        <NavItem href={blogUrl} isActive={currentPath === blogUrl ? true : false}>Blog</NavItem>
+        <NavItem href={aboutUrl} isActive={currentPath === aboutUrl ? true : false}>About</NavItem>
       </Nav>
 
       <button className="h-7 w-7 mr-3 sm:hidden">

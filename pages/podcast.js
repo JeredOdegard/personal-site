@@ -31,9 +31,7 @@ export default function Podcast({ podcast }) {
 
         <section className="flex space-x-4 items-start sm:items-center pb-6">
           <div className="flex-shrink-0">
-            <a href={podcast.feedUrl} title={podcast.title}>
-              <img className="w-28 h-28 rounded shadow-2xl" src={podcast.image.url} title={podcast.image.title} />
-            </a>
+            <img className="w-28 h-28 rounded shadow-2xl" src={podcast.image.url} alt={podcast.image.title} />
           </div>
 
           <figure className="w-screen">

@@ -6,12 +6,12 @@ export function Headline({ children }) {
 
 export function Subtitle({ children }) {
   return (
-    <h2 className="text-lg font-extrabold my-2 text-gray-400">{children}</h2>
+    <h2 className="text-2xl font-extrabold my-2 text-gray-600">{children}</h2>
   )
 }
 
 export function SectionTitle({ children }) {
   return (
-    <h3 className="text-lg font-extrabold my-2 text-gray-400">{children}</h3>
+    <h3 className="text-lg font-bold my-2 text-gray-400">{children}</h3>
   )
 }

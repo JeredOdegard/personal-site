@@ -1,6 +1,7 @@
 import Head from "next/head"
 
 import NavBar from "../components/navbar"
+import { Headline, Subtitle, SectionTitle } from "../components/typography"
 
 export default function Coaching() {
   return (
@@ -13,7 +14,7 @@ export default function Coaching() {
       <NavBar />
 
       <main className="px-4 max-w-screen-lg mx-auto">
-        <h1 className="text-4xl font-black mb-8 mt-12 leading-tight text-gray-900">Coaching</h1>
+        <Headline>Coaching</Headline>
       </main>
     </div>
   );

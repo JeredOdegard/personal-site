@@ -1,6 +1,7 @@
 import Head from "next/head"
 
 import NavBar from "../components/navbar"
+import { Headline, Subtitle, SectionTitle } from "../components/typography"
 
 function Blog() {
   return (
@@ -14,7 +15,7 @@ function Blog() {
       <NavBar />
 
       <main className="px-4 max-w-screen-lg mx-auto">
-        <h1 className="text-4xl font-black mb-8 mt-12 leading-tight text-gray-900">Blog</h1>
+        <Headline>Blog</Headline>
       </main>
     </div>
   );
