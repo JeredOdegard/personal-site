@@ -1,7 +1,7 @@
 import Head from "next/head"
 
-import NavBar from "@/components/navbar.js"
-import { Headline, Subtitle, SectionTitle } from "@/components/typography.js"
+import NavBar from "components/NavBar.js"
+import { Headline, Subtitle, SectionTitle } from "components/Typography.js"
 
 function Blog() {
   return (

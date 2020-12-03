@@ -1,3 +1,9 @@
+export default function Typography() {
+  return (
+    <div></div>
+  )
+}
+
 export function Headline({ children }) {
   return (
     <h1 className="text-4xl font-black mb-8 mt-12 text-gray-900">{children}</h1>

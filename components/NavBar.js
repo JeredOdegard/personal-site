@@ -1,5 +1,5 @@
-import Nav from "@/components/nav.js"
-import NavItem from "@/components/navitem.js"
+import Nav from "components/Nav.js"
+import NavItem from "components/NavItem.js"
 import { useRouter } from "next/router"
 
 export default function NavBar({ children }) {
