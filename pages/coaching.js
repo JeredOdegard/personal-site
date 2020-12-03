@@ -1,7 +1,7 @@
 import Head from "next/head"
 
 import NavBar from "components/NavBar.js"
-import { Headline, Subtitle, SectionTitle } from "components/Typography.js"
+import { Headline, Subtitle, SectionTitle } from "components/typography"
 
 export default function Coaching() {
   return (
