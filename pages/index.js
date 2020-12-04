@@ -13,22 +13,22 @@ export default function Home() {
 
       <NavBar />
 
-      <div className="w-full h-screen flex items-center -mt-4">
-        <section className="grid grid-cols-12 max-w-screen-xl space-x-24 px-4 mx-auto">
+      <div className="w-full lg:h-screen flex items-center mt-10 lg:-mt-24 px-8">
+        <section className="grid grid-cols-12 max-w-screen-xl lg:gap-x-20 mx-auto">
           <div className="col-span-full lg:col-span-8">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-8 font-serif">Looking to move faster?</h2>
-            <p className="text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500">I'm a former product leader. I partner with high performing tech professionals and executives who are after big change. My secret is understanding each person and adapting the coaching to their exact needs. I will accelerate you towards where you want to be.</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-8 font-serif">Let's realize your vision.</h2>
+            <p className="text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500">I'm a coach and former product leader. I partner with high performing tech professionals and executives after big change. My secret is understanding what makes you unique and adapting the coaching to your exact needs. I'm confident I can accelerate you towards where you want to be.</p>
             <a href="/coaching">
               <button className="px-8 py-4 bg-purple-500 font-bold text-white rounded mt-2 lg:mt-4 shadow-xl">See if we'd be a good fit</button>
             </a>
           </div>
-          <div className="col-span-4">
-            <img className="w-full rounded" src="me.jpg" />
+          <div className="col-span-full lg:col-span-4">
+            <img className="hidden lg:flex w-full rounded" src="me.jpg" />
           </div>
         </section>
       </div>
 
-      <div className="w-full h-72 bg-purple-500"></div>
+      <div className="w-full h-72 bg-purple-500 mt-10"></div>
 
       <section className="grid grid-cols-12 gap-y-2 md:gap-x-10 max-w-screen-xl px-4 mt-10 mx-auto">
 

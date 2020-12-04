@@ -1,6 +1,6 @@
 function Headline({ children }) {
   return (
-    <h1 className="text-4xl font-black mb-8 mt-12 text-gray-900">{children}</h1>
+    <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight font-extrabold text-gray-900 tracking-tight mt-8 mb-6 font-serif">{children}</h1>
   )
 }
 

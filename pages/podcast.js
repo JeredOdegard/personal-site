@@ -28,6 +28,8 @@ export default function Podcast({ podcast }) {
 
         <Headline>Podcast</Headline>
 
+        <div className="border-b border-gray-200 w-full mb-8"></div>
+
         <section className="flex space-x-4 items-start sm:items-center pb-6">
           <div className="flex-shrink-0">
             <img className="w-28 h-28 rounded shadow-2xl" src={podcast.image.url} alt={podcast.image.title} />
