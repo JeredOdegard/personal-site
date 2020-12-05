@@ -6,7 +6,8 @@ module.exports = {
     	minWidth: {
     		'sm': '375px'
     	},
-    	maxWidth: {
+    	boxShadow: {
+        'dark': '0 15px 50px 10px rgba(0, 0, 0, 0.35)'
     	}
     },
   },
