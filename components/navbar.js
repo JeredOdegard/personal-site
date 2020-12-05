@@ -14,7 +14,7 @@ export default function NavBar({ children }) {
   const aboutUrl = "/about"
 
   return (
-    <header className="flex justify-between sm:justify-start sm:space-x-8 items-center shadow mb-4 bg-white">
+    <header className="flex justify-between sm:justify-start sm:space-x-8 items-center shadow-xl bg-white">
 
       <div className="h-14 w-14 md:h-20 md:w-16 bg-black flex items-center justify-center fill-current text-white">
         <svg className="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -30,7 +30,7 @@ export default function NavBar({ children }) {
         <NavItem href={aboutUrl} isActive={currentPath === aboutUrl ? true : false}>About</NavItem>
       </Nav>
 
-      <button className="h-7 w-7 mr-3 sm:hidden">
+      <button className="h-7 w-7 mr-3 sm:hidden" onClick={openNav}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -40,4 +40,9 @@ export default function NavBar({ children }) {
 
     </header>
   )
+}
+
+function openNav() {
+  alert("I haven't implemented this yet")
+  return this
 }
