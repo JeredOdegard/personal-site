@@ -47,7 +47,7 @@ function Blog() {
           </a>
         </div>
 
-        <div className="w-full py-16 md:py-32 flex items-center mt-10 -mt-20 px-8 bg-white shadow-xl border mb-16 rounded-xl">
+        <div className="w-full py-16 md:py-32 flex items-center mt-10 -mt-20 px-16 bg-white shadow-xl border mb-16 rounded-xl">
           <section className="grid grid-cols-12 max-w-screen-xl lg:gap-x-20 mx-auto items-center">
             <div className="col-span-full xl:col-span-8">
               <div className="uppercase tracking-wide text-yellow-600 font-extrabold mb-4">CERTIFIED COACH</div>
@@ -63,7 +63,7 @@ function Blog() {
           </section>
         </div>
 
-        <div className="w-full py-16 md:py-32 flex items-center px-8 bg-yellow-50 mb-10 rounded-xl">
+        <div className="w-full py-16 md:py-32 flex items-center px-16 bg-yellow-50 mb-10 rounded-xl">
           <section className="grid grid-cols-12 max-w-screen-xl lg:gap-x-20 mx-auto items-center">
             <div className="hidden xl:grid col-span-full mt-10 xl:mt-0 xl:col-span-4 mt-0">
               <img className="shadow-dark rounded" src="podcast.jpg" />
