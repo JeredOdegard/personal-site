@@ -32,12 +32,12 @@ function Blog() {
             <a className="hover:text-gray-800" href="#">Blog</a>
             <a className="hover:text-gray-800" href="#">About</a>
           </nav>
-          <button className="h-10 px-4 py-2 bg-yellow-200 font-bold text-yellow-600 rounded -mt-2 hover:bg-yellow-300">
+          <button className="h-10 px-4 py-2 bg-yellow-200 font-bold text-yellow-600 rounded -mt-1 hover:bg-yellow-300">
           Contact
           </button>
         </div>
 
-        <div className="mt-48 mb-64 text-center">
+        <div className="mt-32 mb-72 text-center">
           <h1 className="text-5xl md:text-7xl text-gray-900 font-bold font-serif leading-tight">Leadership fascinates me.</h1>
           <p className="text-gray-500 text-xl md:text-2xl max-w-screen-lg mt-4 mx-auto">
           My purpose is to help create more authentic and capable leaders.
@@ -58,7 +58,7 @@ function Blog() {
                 </a>
             </div>
             <div className="hidden xl:grid col-span-full mt-10 xl:mt-0 xl:col-span-4 mt-0">
-              <img className="shadow-dark rounded" src="selft.jpg" />
+              <img className="shadow-dark rounded transform rotate-1" src="selft.jpg" />
             </div>
           </section>
         </div>
