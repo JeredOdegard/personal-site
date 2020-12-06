@@ -10,7 +10,7 @@ function Blog() {
       </Head>
 
       <div className="absolute z-0 w-full h-full">
-        <div className="bg-yellow-100 h-96 lg:h-72 xl:h-0"></div>
+        <div className="bg-yellow-50 h-96 lg:h-72 xl:h-0"></div>
         <svg className="fill-current text-yellow-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 744">
           <path d="M0 0h1920v654.395c-179.423-73.807-402.81-73.807-670.16 0-164.619 45.447-467.454 141.64-810.272 0C294.326 594.387 147.803 624.185 0 743.787V0z" fill-rule="evenodd"/>
         </svg>
@@ -38,9 +38,9 @@ function Blog() {
         </div>
 
         <div className="mt-48 mb-64 text-center">
-          <h1 className="text-5xl md:text-7xl text-gray-900 font-bold font-serif leading-tight">I'm obsessed with results.</h1>
+          <h1 className="text-5xl md:text-7xl text-gray-900 font-bold font-serif leading-tight">Leadership fascinates me.</h1>
           <p className="text-gray-500 text-xl md:text-2xl max-w-screen-lg mt-4 mx-auto">
-          After a decade in tech building teams and products, I left.
+          My purpose is to help create more authentic and capable leaders.
           </p>
           <a href="#">
             <button className="px-8 py-3 bg-yellow-600 text-lg font-bold text-white rounded mt-8 hover:bg-yellow-500">See my story</button>
@@ -51,7 +51,7 @@ function Blog() {
           <section className="grid grid-cols-12 max-w-screen-xl lg:gap-x-20 mx-auto items-center">
             <div className="col-span-full xl:col-span-8">
               <div className="uppercase tracking-wide text-yellow-600 font-extrabold mb-4">CERTIFIED COACH</div>
-              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-extrabold text-gray-900 mb-8 font-serif">Make your growth easy.</h2>
+              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-extrabold text-gray-900 mb-8 font-serif max-w-screen-sm">Fast-track your growth.</h2>
               <p className="text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500 max-w-screen">I help high performing professionals and executives at companies like <span className="font-bold text-gray-700">Amazon</span>,  <span className="font-bold text-gray-700">Facebook</span>, and <span className="font-bold text-gray-700">Microsoft</span> achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
                 <a href="#">
                   <button className="px-8 py-4 bg-yellow-200 text-lg font-bold text-yellow-600 rounded mt-2 lg:mt-4 hover:bg-yellow-300">What is coaching?</button>
@@ -70,7 +70,7 @@ function Blog() {
             </div>
             <div className="col-span-full xl:col-span-8">
               <div className="uppercase tracking-wide text-yellow-600 font-extrabold mb-4">PODCAST HOST</div>
-              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-8 font-serif">What rebels do.</h2>
+              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-8 font-serif">Experts say.</h2>
               <p className="text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500 max-w-screen">I host a podcast called the <span className="font-bold text-gray-700">Jered O Show</span>. Each episode I meet with researchers and company leaders to uncover how to become world-class.</p>
                 <a href="#">
                   <button className="px-8 py-4 border-2 border-yellow-500 text-lg font-bold text-yellow-500 rounded mt-2 lg:mt-4 hover:bg-yellow-500 hover:text-white">Listen to the podcast</button>
