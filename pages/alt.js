@@ -84,7 +84,7 @@ function Blog() {
         {/* Navbar - End */}
 
         {/* Hero */}
-        <div className="mt-32 mb-24 sm:mb-32 md:mb-48 lg:mb-52 text-center mx-auto max-w-lg md:max-w-none">
+        <div className="mt-32 mb-24 sm:mb-32 md:mb-48 lg:mb-52 text-center mx-auto md:max-w-none">
           <h1 className="text-5xl lg:text-6xl xl:text-7xl text-gray-900 font-bold font-serif leading-tight">Leadership fascinates me.</h1>
           <p className="text-gray-500 text-lg md:text-xl md:text-2xl max-w-screen-lg mt-4 mx-auto">My purpose is to help create more authentic and capable leaders.</p>
           <a href="/about">

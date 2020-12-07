@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
     	minWidth: {
-    		'sm': '375px'
+    		'sm': '500px'
     	},
     	boxShadow: {
         'dark': '0 15px 50px 10px rgba(0, 0, 0, 0.35)'
