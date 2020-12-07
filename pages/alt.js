@@ -58,7 +58,7 @@ function Blog() {
             {/* Logo - End */}
 
             {/* Nav Items */}
-            <nav className="hidden md:flex gap-x-8 ml-24 text-sm lg:text-base">
+            <nav className="hidden md:flex space-x-8 ml-24 text-sm lg:text-base">
               <a className="font-extrabold text-gray-800" href="/alt">Home</a>
               <a className="font-medium text-gray-500 hover:text-gray-800" href="/coaching">Coaching</a>
               <a className="font-medium text-gray-500 hover:text-gray-800" href="/podcast">Podcast</a>
