@@ -2,7 +2,7 @@ import Head from "next/head"
 
 function Blog() {
   return (
-    <div id="main" className="min-w-sm antialiased">
+    <div id="main" className="antialiased">
     
       <Head>
         <title>ALTERNATIVE - Jered Odegard</title>
@@ -34,7 +34,7 @@ function Blog() {
 
       {/* Background Shape */}
       <div className="absolute z-0 w-full">
-        <div className="bg-yellow-50 h-80 sm:h-72 md:h-48 lg:h-32 xl:h-0"></div>
+        <div className="bg-yellow-50 pt-96 sm:py-0 sm:h-72 md:h-48 lg:h-32 xl:h-0"></div>
         <svg className="fill-current text-yellow-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 744">
           <path d="M0 0h1920v654.395c-179.423-73.807-402.81-73.807-670.16 0-164.619 45.447-467.454 141.64-810.272 0C294.326 594.387 147.803 624.185 0 743.787V0z" fill-rule="evenodd"/>
         </svg>
@@ -42,7 +42,7 @@ function Blog() {
       {/* Background Shape - End */}
 
       {/* Page Wrapper */}
-      <div className="px-6 lg:px-24 pt-6 pb-4 z-10 relative">
+      <div className="px-6 lg:px-24 pt-6 pb-4 z-10 relative max-w-screen-3xl mx-auto">
 
         {/* Navbar */}
         <div className="flex justify-between">
@@ -85,24 +85,24 @@ function Blog() {
 
         {/* Hero */}
         <div className="mt-32 mb-24 sm:mb-32 md:mb-48 lg:mb-52 text-center mx-auto md:max-w-none">
-          <h1 className="text-5xl lg:text-6xl xl:text-7xl text-gray-900 font-bold font-serif leading-tight">Leadership fascinates me.</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-gray-900 font-bold font-serif leading-tight">Leadership fascinates me.</h1>
           <p className="text-gray-500 text-lg md:text-xl md:text-2xl max-w-screen-lg mt-4 mx-auto">My purpose is to help create more authentic and capable leaders.</p>
           <a href="/about">
-            <button className="px-8 py-3 bg-yellow-600 text-lg font-bold text-white rounded mt-8 hover:bg-yellow-500">See my story</button>
+            <button className="px-8 py-3 bg-yellow-600 text-sm sm:text-lg font-bold text-white rounded mt-8 hover:bg-yellow-500">See my story</button>
           </a>
         </div>
         {/* Hero - End */}
 
 
         {/* Coach Card */}
-        <div className="w-full p-16 lg:py-32 flex items-center mt-10 bg-white mb-16 rounded-xl shadow-xl border">
+        <div className="w-full p-8 sm:p-16 lg:py-32 flex items-center mt-10 bg-white mb-16 rounded-xl shadow-xl border">
           <section className="grid grid-cols-12 max-w-screen-xl xl:gap-x-20 mx-auto items-center">
             <div className="col-span-full xl:col-span-8">
-              <div className="uppercase tracking-wide text-yellow-600 font-extrabold mb-4">CERTIFIED COACH</div>
-              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-extrabold text-gray-900 mb-8 font-serif max-w-screen-sm">Fast-track your growth.</h2>
-              <p className="text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500">I help high performing professionals and executives at companies like <span className="font-bold text-gray-700">Amazon</span>,  <span className="font-bold text-gray-700">Facebook</span>, and <span className="font-bold text-gray-700">Microsoft</span> achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
+              <div className="text-sm sm:text-base uppercase tracking-wide text-yellow-600 font-extrabold mb-4">CERTIFIED COACH</div>
+              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-extrabold text-gray-900 mb-4 sm:mb-8 font-serif max-w-screen-sm">Fast-track your growth.</h2>
+              <p className="text-base sm:text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500">I help high performing professionals and executives at companies like <span className="font-bold text-gray-700">Amazon</span>,  <span className="font-bold text-gray-700">Facebook</span>, and <span className="font-bold text-gray-700">Microsoft</span> achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
                 <a href="/coaching">
-                  <button className="px-8 py-4 bg-yellow-200 text-lg font-bold text-yellow-600 rounded mt-2 lg:mt-4 hover:bg-yellow-300">What is coaching?</button>
+                  <button className="px-6 sm:px-8 py-4 bg-yellow-200 text-sm sm:text-lg font-bold text-yellow-600 rounded mt-2 lg:mt-4 hover:bg-yellow-300">What is coaching?</button>
                 </a>
             </div>
             <div className="hidden xl:grid col-span-full mt-10 xl:mt-0 xl:col-span-4 mt-0">
@@ -113,17 +113,17 @@ function Blog() {
         {/* Coach Card - End */}
 
         {/* Podcast Card */}
-        <div className="w-full p-16 lg:py-32 flex items-center bg-yellow-50 mb-10 rounded-xl">
+        <div className="w-full p-8 sm:p-16 lg:py-32 flex items-center bg-yellow-50 mb-10 rounded-xl">
           <section className="grid grid-cols-12 max-w-screen-xl lg:gap-x-20 mx-auto items-center">
             <div className="hidden xl:grid col-span-full mt-10 xl:mt-0 xl:col-span-4 mt-0">
               <img className="shadow-dark rounded" src="podcast.jpg" />
             </div>
             <div className="col-span-full xl:col-span-8">
-              <div className="uppercase tracking-wide text-yellow-600 font-extrabold mb-4">PODCAST HOST</div>
-              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-8 font-serif">Experts say.</h2>
-              <p className="text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500 max-w-screen-md">I host a podcast called the <span className="font-bold text-gray-700">Jered O Show</span>. Each episode I meet with researchers and company leaders to uncover how to become world-class.</p>
+              <div className="text-sm sm:text-base uppercase tracking-wide text-yellow-600 font-extrabold mb-4">PODCAST HOST</div>
+              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-4 sm:mb-8 font-serif">Experts say.</h2>
+              <p className="text-base sm:text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500 max-w-screen-md">I host a podcast called the <span className="font-bold text-gray-700">Jered O Show</span>. Each episode I meet with researchers and company leaders to uncover how to become world-class.</p>
                 <a href="/podcast">
-                  <button className="px-8 py-4 border-2 border-yellow-500 text-lg font-bold text-yellow-500 rounded mt-2 lg:mt-4 hover:bg-yellow-500 hover:text-white">Listen to the podcast</button>
+                  <button className="px-6 sm:px-8 py-4 border-2 border-yellow-500 text-sm sm:text-lg font-bold text-yellow-500 rounded mt-2 lg:mt-4 hover:bg-yellow-500 hover:text-white">Listen to the podcast</button>
                 </a>
             </div>
           </section>

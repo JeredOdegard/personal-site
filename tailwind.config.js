@@ -8,7 +8,10 @@ module.exports = {
     	},
     	boxShadow: {
         'dark': '0 15px 50px 10px rgba(0, 0, 0, 0.35)'
-    	}
+    	},
+      screens: {
+        '3xl': '1920px'
+      }
     },
   },
   variants: {
