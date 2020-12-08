@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 
 function Home() {
   return (
@@ -61,7 +62,7 @@ function Home() {
 
             {/* Nav Items */}
             <nav className="hidden md:flex space-x-8 ml-24 text-sm lg:text-base">
-              <a className="font-extrabold text-gray-800" href="/alt">Home</a>
+              <a className="font-extrabold text-gray-800" href="/">Home</a>
               <a className="font-medium text-gray-500 hover:text-gray-800" href="/coaching">Coaching</a>
               <a className="font-medium text-gray-500 hover:text-gray-800" href="/podcast">Podcast</a>
               <a className="font-medium text-gray-500 hover:text-gray-800" href="/about">About</a>
@@ -72,7 +73,9 @@ function Home() {
           {/* Left Side - End */}
 
           {/* Contact */}
-          <button onClick={openContact} className=" hidden md:flex px-4 py-2 bg-yellow-200 font-bold text-yellow-600 rounded hover:bg-yellow-300 text-sm lg:text-base">Contact</button>
+          <a href="/contact">
+            <button className=" hidden md:flex px-4 py-2 bg-yellow-200 font-bold text-yellow-600 rounded hover:bg-yellow-300 text-sm lg:text-base">Contact</button>
+          </a>
           {/* Contact - End */}
 
           {/* Hamburger */}
@@ -101,7 +104,7 @@ function Home() {
           <section className="grid grid-cols-12 max-w-screen-xl xl:gap-x-20 mx-auto items-center">
             <div className="col-span-full xl:col-span-8">
               <div className="text-sm sm:text-base uppercase tracking-wide text-yellow-600 font-extrabold mb-4">CERTIFIED COACH</div>
-              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-extrabold text-gray-900 mb-4 sm:mb-8 font-serif max-w-screen-sm">Fast-track your growth.</h2>
+              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl text-gray-900 mb-4 sm:mb-8 font-serif max-w-screen-sm">Fast-track your growth.</h2>
               <p className="text-base sm:text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500">I help high performing professionals and executives at companies like <span className="font-bold text-gray-700">Amazon</span>,  <span className="font-bold text-gray-700">Facebook</span>, and <span className="font-bold text-gray-700">Microsoft</span> achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
                 <a href="/coaching">
                   <button className="px-6 sm:px-8 py-4 bg-yellow-200 text-sm sm:text-lg font-bold text-yellow-600 rounded mt-2 lg:mt-4 hover:bg-yellow-300">What is coaching?</button>
@@ -122,7 +125,7 @@ function Home() {
             </div>
             <div className="col-span-full xl:col-span-8">
               <div className="text-sm sm:text-base uppercase tracking-wide text-yellow-600 font-extrabold mb-4">PODCAST HOST</div>
-              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-4 sm:mb-8 font-serif">Experts say.</h2>
+              <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl text-gray-900 mb-4 sm:mb-8 font-serif">Experts say.</h2>
               <p className="text-base sm:text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500 max-w-screen-md">I host a podcast called the <span className="font-bold text-gray-700">Jered O Show</span>. Each episode I meet with researchers and company leaders to uncover how to become world-class.</p>
                 <a href="/podcast">
                   <button className="px-6 sm:px-8 py-4 border-2 border-yellow-500 text-sm sm:text-lg font-bold text-yellow-500 rounded mt-2 lg:mt-4 hover:bg-yellow-500 hover:text-white">Listen to the podcast</button>
@@ -138,10 +141,6 @@ function Home() {
 
     </div>
   );
-}
-
-function openContact() {
-  alert("Email me at j@jeredodegard.com")
 }
 
 function toggleNav() {

@@ -7,7 +7,8 @@ module.exports = {
     		'sm': '500px'
     	},
     	boxShadow: {
-        'dark': '0 15px 50px 10px rgba(0, 0, 0, 0.35)'
+        'dark': '0 15px 50px 10px rgba(0, 0, 0, 0.35)',
+        'light': '0 15px 50px 10px rgba(0, 0, 0, 0.1)'
     	},
       screens: {
         '3xl': '1920px'
