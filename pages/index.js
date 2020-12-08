@@ -128,7 +128,7 @@ function Home() {
               <h2 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl text-gray-900 mb-4 sm:mb-8 font-serif">Experts say.</h2>
               <p className="text-base sm:text-lg sm:text-2xl font-medium sm:leading-10 mb-6 text-gray-500 max-w-screen-md">I host a podcast called the <span className="font-bold text-gray-700">Jered O Show</span>. Each episode I meet with researchers and company leaders to uncover how to become world-class.</p>
                 <a href="/podcast">
-                  <button className="px-6 sm:px-8 py-4 border-2 border-yellow-500 text-sm sm:text-lg font-bold text-yellow-500 rounded mt-2 lg:mt-4 hover:bg-yellow-500 hover:text-white">Listen to the podcast</button>
+                  <button className="px-6 sm:px-8 py-4 border-2 border-yellow-500 text-sm sm:text-lg font-bold text-yellow-500 transition rounded mt-2 lg:mt-4 hover:bg-yellow-500 hover:text-white">Listen to the podcast</button>
                 </a>
             </div>
           </section>

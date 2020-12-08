@@ -92,25 +92,54 @@ function Podcast({ podcast }) {
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-gray-900 font-serif leading-tight mt-20">Podcast</h1>
 
-        {/* Body Card */}
-        {console.log(podcast)}
-        <div className="w-full mt-12 bg-white bg-opacity-25 mb-16 rounded-md shadow-light pb-10 md:pb-0">
-          <div className="block md:flex space-x-10">
-            <img className="w-full md:w-72 rounded-t-md md:rounded-none md:rounded-l shadow-2xl" src={podcast.image.url} alt={podcast.image.title} />
+        {/* Podcast Card */}
+        <div className="w-full mt-10 bg-white bg-opacity-25 mb-8 rounded-md shadow-light pb-10 md:pb-0">
+          <div className="block md:flex space-x-10 pb-8 md:pb-0">
+            <img className="w-full md:w-72 rounded-t-md md:rounded-none md:rounded-tl" src={podcast.image.url} alt={podcast.image.title} />
             <div className="pt-12 pr-10">
-              <h2 className="text-4xl mb-2 font-black">{podcast.title}</h2>
-              <p className="text-gray-700 mb-4">{podcast.description}</p>
+              <h2 className="text-4xl mb-2 font-extrabold">{podcast.title}</h2>
+              <p className="text-gray-600 mb-4">{podcast.description}</p>
               <p className="text-gray-400 uppercase tracking-wide font-bold text-xs mb-3">Subscribe on</p>
               <a href="https://podcasts.apple.com/us/podcast/jered-o-show/id1536284770">
-                <button className="mr-4 px-4 py-2 bg-gray-100 font-bold text-purple-600 rounded-full hover:bg-purple-100 text-sm lg:text-base">Apple</button>
+                <button className="mr-4 px-5 py-2 font-bold text-purple-600 rounded-full border-2 border-inset border-purple-300 text-sm lg:text-base hover:bg-purple-100 transition">Apple</button>
               </a>
               <a href="https://open.spotify.com/show/3S8KYEw9WWBVXiXu4ebA6M">
-                <button className="mr-4 px-4 py-2 bg-gray-100 font-bold text-green-500 rounded-full hover:bg-green-100 text-sm lg:text-base">Spotify</button>
+                <button className="mr-4 px-4 py-2 font-bold text-green-500 rounded-full border-2 border-green-300 text-sm lg:text-base hover:bg-green-100 transition">Spotify</button>
               </a>
             </div>
           </div>
+          <div className="shadow-inner p-10">
+            <p className="text-gray-400 text-xl font-bold mb-6">Recent episodes</p>
+
+            <div className="flex space-x-8 items-center mb-6 pb-6 border-b border-gray-100">
+              <img className="rounded w-24" src={podcast.items[0].itunes.image} />
+              <div className="">
+                <div className="text-lg font-bold">{podcast.items[0].title}</div>
+                <div className="h-12 overflow-ellipsis overflow-hidden">{podcast.items[0].content}</div>
+              </div>
+              <div className="">
+                <a href={podcast.items[0].link}>
+                  <button className="hidden md:flex px-7 py-2 bg-gray-200 font-bold text-gray-600 rounded hover:bg-gray-300 text-sm lg:text-base">Play</button>
+                </a>
+              </div>
+            </div>
+
+            <div className="flex space-x-8 items-center">
+              <img className="rounded w-24" src={podcast.items[1].itunes.image} />
+              <div className="">
+                <div className="text-lg font-bold">{podcast.items[1].title}</div>
+                <div className="h-12 overflow-ellipsis overflow-hidden">{podcast.items[1].content}</div>
+              </div>
+              <div className="">
+                <a href={podcast.items[1].link}>
+                  <button className="hidden md:flex px-7 py-2 bg-gray-200 font-bold text-gray-600 rounded hover:bg-gray-300 text-sm lg:text-base">Play</button>
+                </a>
+              </div>
+            </div>
+
+          </div>
         </div>
-        {/* Body Card - End */}
+        {/* Podcast Card - End */}
 
         <div className="text-xs text-gray-400 text-center my-4">&copy; 2020 Jered Odegard. All rights reserved.</div>
       </div>
