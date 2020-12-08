@@ -7,6 +7,7 @@ function Home() {
       <Head>
         <title>Home - Jered Odegard</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="favicon.png"  type="image/icon type" />
       </Head>
 
       {/* Mobile Nav */}
@@ -107,7 +108,7 @@ function Home() {
                 </a>
             </div>
             <div className="hidden xl:grid col-span-full mt-10 xl:mt-0 xl:col-span-4 mt-0">
-              <img className="shadow-dark rounded transform rotate-1" src="selft.jpg" />
+              <img className="shadow-dark transform rotate-1" src="selft.jpg" />
             </div>
           </section>
         </div>
