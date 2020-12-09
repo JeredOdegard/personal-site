@@ -95,7 +95,7 @@ function Podcast({ podcast }) {
         {/* Podcast Card */}
         <div className="w-full mt-10 bg-white bg-opacity-25 mb-8 rounded-md shadow-light pb-10 md:pb-0">
           <div className="block md:flex space-x-10 pb-8 md:pb-0">
-            <img className="w-full md:w-72 rounded-t-md md:rounded-none md:rounded-tl" src={podcast.image.url} alt={podcast.image.title} />
+            <img className="w-full md:w-72 md:h-72 rounded-t-md md:rounded-none md:rounded-tl" src={podcast.image.url} alt={podcast.image.title} />
             <div className="pt-12 pr-10">
               <h2 className="text-4xl mb-2 font-extrabold">{podcast.title}</h2>
               <p className="text-gray-600 mb-4">{podcast.description}</p>
