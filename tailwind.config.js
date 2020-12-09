@@ -13,7 +13,10 @@ module.exports = {
     	},
       screens: {
         '3xl': '1920px'
-      }
+      },
+      height: {
+        128: '32rem'
+      },
     },
   },
   variants: {
