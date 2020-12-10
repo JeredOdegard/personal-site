@@ -11,7 +11,7 @@ export default function Alt() {
       </Head>
 
       <div className="relative overflow-hidden h-128">
-        <div className="absolute transform top-0 -skew-y-12 w-full h-full origin-top-left bg-yellow-300"></div>
+        <div className="absolute transform top-0 -skew-y-12 w-full h-full origin-top-left bg-yellow-300 rounded-full"></div>
         <div className="relative max-w-screen-xl mx-auto">
           {/* Navbar */}
           <div className="flex justify-between pt-6">
@@ -19,7 +19,7 @@ export default function Alt() {
             {/* Left Side */}
             <div className="flex items-center">
               {/* Logo */}
-              <div className="h-16 w-16 bg-yellow-400 flex items-center justify-center fill-current text-white text-opacity-80 absolute top-0 rounded-full top-3">
+              <div className="h-16 w-16 bg-yellow-400 flex items-center justify-center fill-current text-white text-opacity-80 absolute top-0 rounded-2xl top-3">
                 <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                   <path d="M5.384 31.168l3.348-3.636c.936.72 2.082 1.26 3.438 1.62 1.356.36 2.778.54 4.266.54 2.016 0 3.888-.324 5.616-.972 1.728-.648 3.228-1.566 4.5-2.754 1.272-1.188 2.268-2.622 2.988-4.302.72-1.68 1.08-3.54 1.08-5.58 0-3.48-1.056-6.384-3.168-8.712l3.204-3.456L27.272 1l-3.24 3.672a13.895 13.895 0 00-3.51-1.422c-1.26-.324-2.61-.486-4.05-.486-2.016 0-3.894.312-5.634.936-1.74.624-3.24 1.512-4.5 2.664-1.26 1.152-2.25 2.55-2.97 4.194-.72 1.644-1.08 3.486-1.08 5.526 0 1.704.258 3.282.774 4.734a11.878 11.878 0 002.25 3.87L2 28.288l3.384 2.88zm5.868-12.744c-.216-.528-.324-1.272-.324-2.232 0-.792.114-1.548.342-2.268.228-.72.57-1.356 1.026-1.908a5.054 5.054 0 011.728-1.332c.696-.336 1.5-.504 2.412-.504.816 0 1.5.108 2.052.324l-7.236 7.92zm5.112 3.672c-.384 0-.762-.024-1.134-.072a3.343 3.343 0 01-.954-.252l7.236-7.92c.24.6.36 1.356.36 2.268 0 .792-.114 1.548-.342 2.268a5.631 5.631 0 01-1.026 1.908 4.867 4.867 0 01-1.728 1.314c-.696.324-1.5.486-2.412.486z" fillRule="nonzero"/>
                 </svg>
@@ -109,8 +109,8 @@ export default function Alt() {
         </div>
       </div>
 
-      <div className="relative pt-32">
-        <div className="absolute transform top-0 -skew-y-12 w-full h-screen origin-top-left bg-gray-50"></div>
+      <div className="relative pt-10 pb-72">
+        <div className="absolute transform top-0 -skew-y-12 w-full h-full origin-top-left bg-gray-100"></div>
         <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto relative z-10">
           <div className="col-span-4">
             <img className="w-full bg-transparent rounded-md shadow-medium" src="podcast.jpg" />
@@ -120,33 +120,39 @@ export default function Alt() {
             <div className="">
               <h3 className="text-lg font-bold text-purple-700 text-opacity-80 mb-3">Podcast host</h3>
               <h2 className="text-4xl text-black text-opacity-80 font-bold mb-6">Learn from the best.</h2>
-              <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I host the <span className="text-black text-opacity-80 font-medium">Jered O Show</span>. Each episode we meet with company leaders and researchers to uncover the practice of world-class teams.</p>
+              <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I host the <span className="text-black text-opacity-80 font-medium">Jered O Show</span>. Each episode we meet with company leaders or pioneering researchers to uncover the practice of world-class teams.</p>
               <button className="bg-purple-700 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Listen to the podcast</button>
+              <div className="mt-14 grid grid-cols-2 gap-x-10">
+                <div className="col-span-1">
+                  <div className="font-bold text-black text-xl mb-2">5/5</div>
+                  <p className="text-black text-opacity-70 text-sm mb-2">Review rating on Apple</p>
+                </div>
+                <div className="col-span-1">
+                  <div className="font-bold text-black text-xl mb-2">200+</div>
+                  <p className="text-black text-opacity-70 text-sm mb-2">Minutes of free content</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-span-1"></div>
         </div>
       </div>
 
-      <div className="w-full pt-32 bg-white mt-96">
-        <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto">
+      <div className="w-full pt-16 bg-white mb-24">
+        <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-14 md:gap-x-10 max-w-screen-xl mx-auto">
           <div className="col-span-6 flex items-center">
             <div>
               <h3 className="text-lg font-bold text-blue-600 text-opacity-80 mb-3">Coming soon</h3>
               <h2 className="text-4xl text-black text-opacity-80 font-bold mb-6">Training programs that work.</h2>
-              <p className="text-black text-opacity-60 text-lg mb-6 font-medium">Become the leader that everyone follows and admires in record time with structure and personalized coaching.</p>
-              <button className="bg-blue-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Know when it's live</button>
+              <p className="text-black text-opacity-60 text-lg mb-6 font-medium">Become the leader everyone follows and admires in record time with strategic learning, a peer community, and personalized coaching.</p>
+              <button className="bg-blue-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Join the waitlist</button>
             </div>
           </div>
-          <div className="col-span-2"></div>
-          <div className="col-span-4"></div>
-        </div>
-      </div>
-
-      <div className="w-full pt-16 bg-white mb-32">
-        <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto">
           <div className="col-span-3">
-            <div className="font-medium text-black text-sm mb-2">Making a manager</div>
+          </div>
+          <div className="col-span-3"></div>
+          <div className="col-span-3">
+            <div className="font-medium text-black text-sm mb-2">Manage the transition</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
@@ -156,7 +162,7 @@ export default function Alt() {
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-3">
-            <div className="font-medium text-black text-sm mb-2">Unleash their performance</div>
+            <div className="font-medium text-black text-sm mb-2">Maximize performance</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
@@ -168,7 +174,7 @@ export default function Alt() {
         </div>
       </div>
 
-
+      <div className="text-center text-xs text-gray-400 mb-6">&copy; Odegard Research LLC. All rights reserved.</div>
     </div>
   )
 }
