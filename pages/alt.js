@@ -19,7 +19,7 @@ export default function Alt() {
             {/* Left Side */}
             <div className="flex items-center">
               {/* Logo */}
-              <div className="h-20 w-16 bg-yellow-400 flex items-center justify-center fill-current text-white text-opacity-80 absolute top-0 rounded-b-md">
+              <div className="h-20 w-16 bg-yellow-400 flex items-center justify-center fill-current text-white text-opacity-80 absolute top-0 rounded-b">
                 <svg className="h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                   <path d="M5.384 31.168l3.348-3.636c.936.72 2.082 1.26 3.438 1.62 1.356.36 2.778.54 4.266.54 2.016 0 3.888-.324 5.616-.972 1.728-.648 3.228-1.566 4.5-2.754 1.272-1.188 2.268-2.622 2.988-4.302.72-1.68 1.08-3.54 1.08-5.58 0-3.48-1.056-6.384-3.168-8.712l3.204-3.456L27.272 1l-3.24 3.672a13.895 13.895 0 00-3.51-1.422c-1.26-.324-2.61-.486-4.05-.486-2.016 0-3.894.312-5.634.936-1.74.624-3.24 1.512-4.5 2.664-1.26 1.152-2.25 2.55-2.97 4.194-.72 1.644-1.08 3.486-1.08 5.526 0 1.704.258 3.282.774 4.734a11.878 11.878 0 002.25 3.87L2 28.288l3.384 2.88zm5.868-12.744c-.216-.528-.324-1.272-.324-2.232 0-.792.114-1.548.342-2.268.228-.72.57-1.356 1.026-1.908a5.054 5.054 0 011.728-1.332c.696-.336 1.5-.504 2.412-.504.816 0 1.5.108 2.052.324l-7.236 7.92zm5.112 3.672c-.384 0-.762-.024-1.134-.072a3.343 3.343 0 01-.954-.252l7.236-7.92c.24.6.36 1.356.36 2.268 0 .792-.114 1.548-.342 2.268a5.631 5.631 0 01-1.026 1.908 4.867 4.867 0 01-1.728 1.314c-.696.324-1.5.486-2.412.486z" fillRule="nonzero"/>
                 </svg>
@@ -27,11 +27,11 @@ export default function Alt() {
               {/* Logo - End */}
 
               {/* Nav Items */}
-              <nav className="hidden md:flex space-x-8 ml-24 text-sm lg:text-base">
+              <nav className="hidden md:flex space-x-8 ml-24 text-sm lg:text-base font-medium">
                 <a className="font-bold text-white" href="/">Home</a>
-                <a className="text-white text-opacity-75 hover:text-white" href="/coaching">Coaching</a>
-                <a className="text-white text-opacity-75 hover:text-white" href="/podcast">Podcast</a>
-                <a className="text-white text-opacity-75 hover:text-white" href="/about">About</a>
+                <a className="text-white text-opacity-70 hover:text-white" href="/coaching">Coaching</a>
+                <a className="text-white text-opacity-70 hover:text-white" href="/podcast">Podcast</a>
+                <a className="text-white text-opacity-70 hover:text-white" href="/about">About</a>
               </nav>
               {/* Nav Items - End */}
 
@@ -62,7 +62,7 @@ export default function Alt() {
       </div>
 
       <div className="max-w-screen-xl mx-auto mt-60">
-        <h3 className="text-sm uppercase tracking-wide font-bold text-black text-opacity-80">I work with people at</h3>
+        <h3 className="text-sm uppercase tracking-wide font-bold text-black text-opacity-80">Trusted by leaders at</h3>
       </div>
 
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto mt-10 mb-20 border-l border-r border-dashed border-gray-300">
@@ -80,13 +80,13 @@ export default function Alt() {
         </div>
       </div>
 
-      <div className="w-full py-24 bg-gray-50">
+      <div className="w-full py-24 bg-white mb-32">
         <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto">
           <div className="col-span-6 flex items-center">
             <div>
               <h3 className="text-lg font-bold text-yellow-600 text-opacity-80 mb-3">Certified coach</h3>
               <h2 className="text-4xl text-black text-opacity-80 font-bold mb-6">Fast-track your growth.</h2>
-              <p className="text-black text-opacity-70 text-lg mb-6">I'm a coach. I help high performing professionals and executives achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
+              <p className="text-black text-opacity-70 text-lg mb-6">I help high performing professionals and executives achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
               <button className="bg-yellow-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button>
             </div>
           </div>
@@ -96,6 +96,25 @@ export default function Alt() {
           </div>
         </div>
       </div>
+
+      <div className="relative pt-32">
+        <div className="absolute transform top-0 -skew-y-12 w-full h-screen origin-top-left bg-gray-50"></div>
+        <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto relative z-10">
+          <div className="col-span-4">
+            <img className="w-full bg-transparent rounded-md shadow-medium" src="podcast.jpg" />
+          </div>
+          <div className="col-span-2"></div>
+          <div className="col-span-6 flex items-center">
+            <div className="">
+              <h3 className="text-lg font-bold text-purple-700 text-opacity-80 mb-3">Podcast host</h3>
+              <h2 className="text-4xl text-black text-opacity-80 font-bold mb-6">Learn from the best.</h2>
+              <p className="text-black text-opacity-70 text-lg mb-6">I run a podcast called the <span className="text-black text-opacity-80 font-medium">Jered O Show</span>. Each episode I meet with company leaders and researchers to uncover the practice of world-class teams.</p> <button className="bg-purple-700 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Listen to the podcast</button>
+            </div>
+          </div>
+          <div className="col-span-1"></div>
+        </div>
+      </div>
+
     </div>
   )
 }
