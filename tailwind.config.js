@@ -17,6 +17,11 @@ module.exports = {
       height: {
         128: '32rem'
       },
+      colors: {
+        gray: {
+          'warm': '#F4F2EC'
+        }
+      },
     },
   },
   variants: {
