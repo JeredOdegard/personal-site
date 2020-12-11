@@ -25,10 +25,10 @@ export default function Alt() {
           </button>
         </div>
         <nav className="space-y-4 lg:space-y-10 text-5xl lg:text-6xl text-gray-800 font-bold">
-          <a className="block border-b border-gray-200 p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/">Home</a>
-          <a className="block border-b border-gray-200 p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/coaching">Coaching</a>
-          <a className="block border-b border-gray-200 p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/podcast">Podcast</a>
-          <a className="block border-b border-gray-200 p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/about">About</a>
+          <a className="block p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/">Home</a>
+          <a className="block p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/coaching">Coaching</a>
+          <a className="block p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/podcast">Podcast</a>
+          <a className="block p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/about">About</a>
           <a className="block p-4 rounded-md hover:bg-gray-100 hover:text-gray-800" href="/about">Contact</a>
         </nav>
       </div>
@@ -36,10 +36,10 @@ export default function Alt() {
 
       <div className="absolute transform top-0 -skew-y-12 w-full h-128 origin-top-left bg-yellow-300 xl:rounded-full"></div>
 
-      <div className="relative overflow-hidden h-128 px-6">
-        <div className="relative max-w-screen-xl mx-auto">
+      <div className="relative overflow-hidden h-128">
+        <div className="max-w-screen-xl mx-auto">
           {/* Navbar */}
-          <div className="flex justify-between pt-6">
+          <div className="flex justify-between pt-6 px-6 lg:px-14">
 
             {/* Left Side */}
             <div className="flex items-center">
@@ -80,13 +80,18 @@ export default function Alt() {
           {/* Navbar - End */}
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto -mt-96 md:-mt-72 relative z-10 px-6">
+
+
+      {/* Hero */}
+      <div className="max-w-screen-xl mx-auto -mt-96 md:-mt-72 relative z-10 px-6 lg:px-14">
         <h1 className="text-black text-5xl md:text-8xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">Leadership fascinates me.</h1>
         <p className="text-2xl text-black text-opacity-60 mb-10">My purpose is to help create more authentic and capable leaders.</p>
         <button className="bg-gray-800 bg-opacity-95 px-6 py-2.5 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Read my story</button>
       </div>
+      {/* Hero - End */}
 
-      <div className="max-w-screen-xl mx-auto mt-32 text-center md:text-left md:mt-60 md:px-10">
+    {/* Logos */}
+      <div className="max-w-screen-xl mx-auto mt-32 text-center md:text-left md:mt-60 px-6 lg:px-14">
         <h3 className="text-sm uppercase tracking-wide font-bold text-black text-opacity-80">Trusted by leaders at</h3>
       </div>
 
@@ -104,8 +109,10 @@ export default function Alt() {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" class="w-48"><title>Lyft logo</title><g fill="none" fill-rule="evenodd"><path fill="var(--userLogoColor, #FF00BF)" fill-rule="nonzero" d="M75.18 3.6h7.71v20.74c0 3.3 1.49 5.25 2.7 6.07-1.26 1.1-5.08 2.08-7.95-.28-1.7-1.39-2.46-3.7-2.46-5.86V3.59zm48.15 17.25v-2.19h2.36v-7.64h-2.59A10.18 10.18 0 0 0 103 13.21v17.82a6.4 6.4 0 0 0 5.12-1.39c1.7-1.39 2.46-3.7 2.46-5.86v-.67h3.85v-7.64h-3.85v-2.31a2.59 2.59 0 1 1 5.18 0v7.66a10.2 10.2 0 0 0 10.17 10.2v-7.6a2.58 2.58 0 0 1-2.59-2.57zM94.17 11v11.23c0 .65-.54 1.16-1.18 1.16-.64 0-1.18-.51-1.18-1.16V11h-7.6v13.19c0 2.36.78 5.37 4.45 6.35 3.66.98 5.77-1.05 5.77-1.05-.2 1.33-1.44 2.31-3.46 2.52a10.5 10.5 0 0 1-4.46-.78v7c2.48.74 5.1.98 7.69.46 4.66-.9 7.6-4.8 7.6-10.03V10.95h-7.63V11z"></path></g></svg>
         </div>
       </div>
+      {/* Logos - End */}
 
-      <div className="w-full pt-16 lg:py-24 bg-white lg:mb-32 px-6">
+      {/* Coach Section */}
+      <div className="w-full pt-16 lg:py-24 bg-white xl:mb-32 px-6 lg:px-14">
         <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto">
           <div className="col-span-full lg:col-span-6 flex items-center">
             <div>
@@ -113,13 +120,13 @@ export default function Alt() {
               <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Fast-track your growth.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I help high performing professionals and executives achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
               <button className="bg-yellow-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button>
-              <div className="mt-14 grid grid-cols-2 gap-x-10">
-                <div className="col-span-1">
+              <div className="mt-14 grid grid-cols-2 gap-x-10 gap-y-10">
+                <div className="col-span-full sm:col-span-1">
                   <div className="font-medium text-black text-opacity-90 text-sm mb-2">A plan that works for you</div>
                   <p className="text-black text-opacity-70 text-sm mb-2">My secret is adapting the approach to each person. Together, we'll find a path that leverages what makes you unique.</p>
                   <a className="text-sm text-yellow-600 font-medium" href="#">Discover yours</a>
                 </div>
-                <div className="col-span-1">
+                <div className="col-span-full sm:col-span-1">
                   <div className="font-medium text-black text-opacity-90 text-sm mb-2">Breakthrough insight</div>
                   <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your awareness. After our conversations, you'll leave with clarity and motivation unlike before.</p>
                   <a className="text-sm text-yellow-600 font-medium" href="#">How it works</a>
@@ -128,16 +135,18 @@ export default function Alt() {
             </div>
           </div>
           <div className="lg:col-span-2"></div>
-          <div className="col-span-full lg:col-span-4 flex md:grid justify-center items-center">
+          <div className="col-span-full lg:col-span-4 flex md:grid justify-center items-end">
             <img className="w-72 lg:w-full bg-transparent rounded-sm" src="clip_bw.png" />
           </div>
         </div>
       </div>
+      {/* Coach Section - End */}
 
-      <div className="hidden md:block absolute transform h-128 xl:-skew-y-12 w-full h-128 origin-top-left bg-gray-warm"></div>
-      <div className="relative pt-16 pb-16 px-6 bg-gray-warm lg:bg-transparent">
+      {/* Podcast Section */}
+      <div className="hidden xl:block absolute transform xl:-skew-y-12 w-full h-160 origin-top-left bg-gray-warm rounded-full rounded-tr-none"></div>
+      <div className="relative pt-16 pb-16 xl:pt-0 xl:-mt-24 xl:mb-10 px-6 lg:px-14 bg-gray-warm xl:bg-transparent">
         <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto relative z-10">
-          <div className="col-span-full md:col-span-5 flex justify-center md:grid items-center">
+          <div className="col-span-full md:col-span-5 flex justify-center items-center md:justify-start md:flex-none">
             <img className="w-72 mb-10 md:mb-0 md:w-full bg-transparent shadow-medium" src="podcast.jpg" />
           </div>
           <div className="md:col-span-1"></div>
@@ -161,8 +170,11 @@ export default function Alt() {
           </div>
         </div>
       </div>
+      {/* Podcast Section - End */}
 
-      <div className="w-full pt-16 bg-white mb-8 lg:mb-24 px-6">
+
+      {/* Training Section */}
+      <div className="w-full pt-16 bg-white mb-8 lg:mb-24 px-6 lg:px-14 xl:mt-40">
         <div className="grid grid-cols-12 gap-x-2 gap-y-10 md:gap-y-14 md:gap-x-10 max-w-screen-xl mx-auto">
           <div className="col-span-full lg:col-span-6 flex items-center">
             <div>
@@ -173,30 +185,31 @@ export default function Alt() {
             </div>
           </div>
           <div className="hidden lg:block lg:col-span-6"></div>
-          <div className="col-span-6 lg:col-span-3">
+          <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Manage the transition</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
-          <div className="col-span-6 lg:col-span-3">
+          <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Hire the best</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
-          <div className="col-span-6 lg:col-span-3">
+          <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Maximize performance</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
-          <div className="col-span-6 lg:col-span-3">
+          <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Scale your influence</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
         </div>
       </div>
+      {/* Training Section */}
 
-      <div className="text-center text-xs text-gray-400 mb-6">&copy; Odegard Research LLC. All rights reserved.</div>
+      <div className="text-center text-xs text-gray-400 mb-6">&copy; Odegard Research. All rights reserved.</div>
     </div>
   )
 }

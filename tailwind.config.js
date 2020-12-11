@@ -15,7 +15,9 @@ module.exports = {
         '3xl': '1920px'
       },
       height: {
-        128: '32rem'
+        128: '32rem',
+        160: '40rem',
+        192: '48rem'
       },
       colors: {
         gray: {
