@@ -39,7 +39,7 @@ export default function Alt() {
       <div className="relative overflow-hidden h-128">
         <div className="max-w-screen-xl mx-auto">
           {/* Navbar */}
-          <div className="flex justify-between pt-6 px-6 lg:px-14">
+          <div className="flex justify-between pt-6 px-6 lg:px-14 xl:px-6">
 
             {/* Left Side */}
             <div className="flex items-center">
@@ -83,7 +83,7 @@ export default function Alt() {
 
 
       {/* Hero */}
-      <div className="max-w-screen-xl mx-auto -mt-96 md:-mt-72 relative z-10 px-6 lg:px-14">
+      <div className="max-w-screen-xl mx-auto -mt-96 md:-mt-72 relative z-10 px-6 lg:px-14 xl:px-6">
         <h1 className="text-black text-5xl md:text-8xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">Leadership fascinates me.</h1>
         <p className="text-2xl text-black text-opacity-60 mb-10">My purpose is to help create more authentic and capable leaders.</p>
         <button className="bg-gray-800 bg-opacity-95 px-6 py-2.5 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Read my story</button>
@@ -91,7 +91,7 @@ export default function Alt() {
       {/* Hero - End */}
 
     {/* Logos */}
-      <div className="max-w-screen-xl mx-auto mt-32 text-center md:text-left md:mt-60 px-6 lg:px-14">
+      <div className="max-w-screen-xl mx-auto mt-32 text-center md:text-left md:mt-60 px-6 lg:px-14 xl:px-6">
         <h3 className="text-sm uppercase tracking-wide font-bold text-black text-opacity-80">Trusted by leaders at</h3>
       </div>
 
@@ -112,8 +112,8 @@ export default function Alt() {
       {/* Logos - End */}
 
       {/* Coach Section */}
-      <div className="w-full pt-16 lg:py-24 bg-white xl:mb-32 px-6 lg:px-14">
-        <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto">
+      <div className="w-full pt-16 lg:py-24 bg-white xl:mb-32">
+        <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
           <div className="col-span-full lg:col-span-6 flex items-center">
             <div>
               <h3 className="text-lg font-bold text-yellow-600 text-opacity-80 mb-3">Certified coach</h3>
@@ -144,8 +144,8 @@ export default function Alt() {
 
       {/* Podcast Section */}
       <div className="hidden xl:block absolute transform xl:-skew-y-12 w-full h-160 origin-top-left bg-gray-warm rounded-full rounded-tr-none"></div>
-      <div className="relative pt-16 pb-16 xl:pt-0 xl:-mt-24 xl:mb-10 px-6 lg:px-14 bg-gray-warm xl:bg-transparent">
-        <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto relative z-10">
+      <div className="relative pt-16 pb-16 xl:pt-0 xl:-mt-24 xl:mb-10 bg-gray-warm xl:bg-transparent">
+        <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto relative z-10 px-6 lg:px-14 xl:px-6">
           <div className="col-span-full md:col-span-5 flex justify-center items-center md:justify-start md:flex-none">
             <img className="w-72 mb-10 md:mb-0 md:w-full bg-transparent shadow-medium" src="podcast.jpg" />
           </div>
@@ -174,8 +174,8 @@ export default function Alt() {
 
 
       {/* Training Section */}
-      <div className="w-full pt-16 bg-white mb-8 lg:mb-24 px-6 lg:px-14 xl:mt-40">
-        <div className="grid grid-cols-12 gap-x-2 gap-y-10 md:gap-y-14 md:gap-x-10 max-w-screen-xl mx-auto">
+      <div className="w-full pt-16 bg-white mb-8 lg:mb-24 xl:mt-40">
+        <div className="grid grid-cols-12 gap-x-2 gap-y-10 md:gap-y-14 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
           <div className="col-span-full lg:col-span-6 flex items-center">
             <div>
               <h3 className="text-lg font-bold text-blue-600 text-opacity-80 mb-3">Coming soon</h3>
