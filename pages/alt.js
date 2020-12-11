@@ -5,9 +5,9 @@ export default function Alt() {
     <div id="main" className="antialiased">
 
       <Head>
-        <title>Alternative - Jered Odegard</title>
+        <title>Jered Odegard : Leadership, career, and executive coaching</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="favicon.png"  type="image/icon type" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
       </Head>
 
       {/* Mobile Nav */}

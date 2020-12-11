@@ -7,7 +7,7 @@ function Blog() {
     <div className="min-w-sm antialiased">
     
       <Head>
-        <title>Blog - Jered Odegard</title>
+        <title>Blog : Jered Odegard</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
