@@ -212,22 +212,22 @@ export default function Home() {
           <div className="hidden lg:block lg:col-span-6"></div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Manage the transition</div>
-            <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
+            <p className="text-black text-opacity-70 text-sm mb-2">Have you been thrown into the deep end like most? Avoid all the mistakes first-time managers make.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Hire the best</div>
-            <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
+            <p className="text-black text-opacity-70 text-sm mb-2">Find the top performers who will thrive under your leadership and persuade them to join your team.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Maximize performance</div>
-            <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
+            <p className="text-black text-opacity-70 text-sm mb-2">Equip yourself with powerful coaching skills to turn around a struggling employee and strengthen the high achievers.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Scale your influence</div>
-            <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your self-awareness. After our conversations, you'll leave with clarity and motivation.</p>
+            <p className="text-black text-opacity-70 text-sm mb-2">Learn to think like an executive. Build processes and a culture that attracts, retains, and enables world-class talent.</p>
             <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
           </div>
         </div>
