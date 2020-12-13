@@ -18,18 +18,18 @@ export default function Home() {
               <path d="M5.384 31.168l3.348-3.636c.936.72 2.082 1.26 3.438 1.62 1.356.36 2.778.54 4.266.54 2.016 0 3.888-.324 5.616-.972 1.728-.648 3.228-1.566 4.5-2.754 1.272-1.188 2.268-2.622 2.988-4.302.72-1.68 1.08-3.54 1.08-5.58 0-3.48-1.056-6.384-3.168-8.712l3.204-3.456L27.272 1l-3.24 3.672a13.895 13.895 0 00-3.51-1.422c-1.26-.324-2.61-.486-4.05-.486-2.016 0-3.894.312-5.634.936-1.74.624-3.24 1.512-4.5 2.664-1.26 1.152-2.25 2.55-2.97 4.194-.72 1.644-1.08 3.486-1.08 5.526 0 1.704.258 3.282.774 4.734a11.878 11.878 0 002.25 3.87L2 28.288l3.384 2.88zm5.868-12.744c-.216-.528-.324-1.272-.324-2.232 0-.792.114-1.548.342-2.268.228-.72.57-1.356 1.026-1.908a5.054 5.054 0 011.728-1.332c.696-.336 1.5-.504 2.412-.504.816 0 1.5.108 2.052.324l-7.236 7.92zm5.112 3.672c-.384 0-.762-.024-1.134-.072a3.343 3.343 0 01-.954-.252l7.236-7.92c.24.6.36 1.356.36 2.268 0 .792-.114 1.548-.342 2.268a5.631 5.631 0 01-1.026 1.908 4.867 4.867 0 01-1.728 1.314c-.696.324-1.5.486-2.412.486z" fillRule="nonzero"/>
             </svg>
           </div>
-          <button className="h-9 w-9 fill-current text-gray-800 " onClick={toggleNav}>
+          <button className="h-14 w-14 p-2 fill-current text-gray-800 hover:bg-gray-200 rounded-xl" onClick={toggleNav}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        <nav className="space-y-4 lg:space-y-10 text-5xl lg:text-6xl text-gray-800 font-bold">
-          <a className="block p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/">Home</a>
-          <a className="block p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/coaching">Coaching</a>
-          <a className="block p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/podcast">Podcast</a>
-          <a className="block p-4 rounded-md hover:bg-gray-100 hover:border-gray-100 hover:text-gray-800" href="/about">About</a>
-          <a className="block p-4 rounded-md hover:bg-gray-100 hover:text-gray-800" href="/about">Contact</a>
+        <nav className="space-y-4 lg:space-y-10 text-5xl lg:text-6xl text-black font-bold">
+          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/">Home</a>
+          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/coaching">Coaching</a>
+          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/podcast">Podcast</a>
+          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/about">About</a>
+          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/about">Contact</a>
         </nav>
       </div>
       {/* Mobile Nav - End */}
@@ -44,7 +44,7 @@ export default function Home() {
             {/* Left Side */}
             <div className="flex items-center">
               {/* Logo */}
-              <div className="h-20 xl:h-16 w-16 bg-yellow-400 flex items-center justify-center fill-current text-white text-opacity-100 absolute top-0 rounded-b-md xl:rounded-xl xl:top-3 top-0">
+              <div className="h-20 xl:h-16 w-16 bg-yellow-400 flex items-center justify-center fill-current text-white text-opacity-100 absolute top-0 rounded-b-md xl:rounded-full xl:top-3 top-0">
                 <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                   <path d="M5.384 31.168l3.348-3.636c.936.72 2.082 1.26 3.438 1.62 1.356.36 2.778.54 4.266.54 2.016 0 3.888-.324 5.616-.972 1.728-.648 3.228-1.566 4.5-2.754 1.272-1.188 2.268-2.622 2.988-4.302.72-1.68 1.08-3.54 1.08-5.58 0-3.48-1.056-6.384-3.168-8.712l3.204-3.456L27.272 1l-3.24 3.672a13.895 13.895 0 00-3.51-1.422c-1.26-.324-2.61-.486-4.05-.486-2.016 0-3.894.312-5.634.936-1.74.624-3.24 1.512-4.5 2.664-1.26 1.152-2.25 2.55-2.97 4.194-.72 1.644-1.08 3.486-1.08 5.526 0 1.704.258 3.282.774 4.734a11.878 11.878 0 002.25 3.87L2 28.288l3.384 2.88zm5.868-12.744c-.216-.528-.324-1.272-.324-2.232 0-.792.114-1.548.342-2.268.228-.72.57-1.356 1.026-1.908a5.054 5.054 0 011.728-1.332c.696-.336 1.5-.504 2.412-.504.816 0 1.5.108 2.052.324l-7.236 7.92zm5.112 3.672c-.384 0-.762-.024-1.134-.072a3.343 3.343 0 01-.954-.252l7.236-7.92c.24.6.36 1.356.36 2.268 0 .792-.114 1.548-.342 2.268a5.631 5.631 0 01-1.026 1.908 4.867 4.867 0 01-1.728 1.314c-.696.324-1.5.486-2.412.486z" fillRule="nonzero"/>
                 </svg>
@@ -52,11 +52,11 @@ export default function Home() {
               {/* Logo - End */}
 
               {/* Nav Items */}
-              <nav className="hidden md:flex space-x-8 ml-24 text-base lg:text-lg font-medium">
+              <nav className="hidden md:flex space-x-8 ml-24 text-base lg:text-lg font-bold">
                 <a className="text-white" href="/">Home</a>
-                <a className="text-white text-opacity-60 hover:text-white" href="/coaching">Coaching</a>
-                <a className="text-white text-opacity-60 hover:text-white" href="/podcast">Podcast</a>
-                <a className="text-white text-opacity-60 hover:text-white" href="/about">About</a>
+                <a className="text-white text-opacity-70 hover:text-white" href="/coaching">Coaching</a>
+                <a className="text-white text-opacity-70 hover:text-white" href="/podcast">Podcast</a>
+                <a className="text-white text-opacity-70 hover:text-white" href="/about">About</a>
               </nav>
               {/* Nav Items - End */}
 
@@ -65,12 +65,12 @@ export default function Home() {
 
             {/* Contact */}
             <a href="/contact">
-              <button className="hidden md:flex px-4 py-2 bg-white bg-opacity-30 font-medium tracking-wide text-white hover:bg-opacity-40 transform transition hover:scale-105 text-base lg:text-lg rounded-full">Contact</button>
+              <button className="hidden md:flex px-4 py-2 bg-yellow-400 bg-opacity-80 font-medium tracking-wide text-white hover:bg-opacity-100 transform transition hover:scale-105 text-base lg:text-lg rounded-full">Contact</button>
             </a>
             {/* Contact - End */}
 
             {/* Hamburger */}
-            <button className="h-9 w-9 md:hidden bg-white bg-opacity-0 fill-current text-white text-opacity-60 hover:bg-opacity-30 rounded" onClick={toggleNav}>
+            <button className="h-14 w-14 p-2 md:hidden fill-current text-white hover:bg-yellow-400 rounded-xl" onClick={toggleNav}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
@@ -141,20 +141,20 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
           <div className="col-span-full lg:col-span-6 flex items-center">
             <div>
-              <h3 className="text-lg font-bold text-yellow-600 text-opacity-80 mb-3">Certified coach</h3>
+              <h3 className="text-lg font-bold text-tertiary-600 text-opacity-80 mb-3">Certified coach</h3>
               <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Fast-track your growth.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I help high performing professionals and executives achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
-              <button className="bg-yellow-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button>
+              <button className="bg-tertiary-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button>
               <div className="mt-14 grid grid-cols-2 gap-x-10 gap-y-10">
                 <div className="col-span-full sm:col-span-1">
                   <div className="font-medium text-black text-opacity-90 text-sm mb-2">A plan that works for you</div>
                   <p className="text-black text-opacity-70 text-sm mb-2">My secret is adapting the approach to each person. Together, we'll find a path that leverages what makes you unique.</p>
-                  <a className="text-sm text-yellow-600 font-medium" href="#">Discover yours</a>
+                  <a className="text-sm text-tertiary-600 font-medium" href="#">Discover yours</a>
                 </div>
                 <div className="col-span-full sm:col-span-1">
                   <div className="font-medium text-black text-opacity-90 text-sm mb-2">Breakthrough insight</div>
                   <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your awareness. After our conversations, you'll leave with clarity and motivation unlike before.</p>
-                  <a className="text-sm text-yellow-600 font-medium" href="#">How it works</a>
+                  <a className="text-sm text-tertiary-600 font-medium" href="#">How it works</a>
                 </div>
               </div>
             </div>
@@ -168,8 +168,8 @@ export default function Home() {
       {/* Coach Section - End */}
 
       {/* Podcast Section */}
-      <div className="hidden xl:block absolute transform xl:-skew-y-12 w-full h-160 origin-top-left bg-gray-warm rounded-full rounded-tr-none"></div>
-      <div className="relative pt-16 pb-16 xl:pt-0 xl:-mt-24 xl:mb-10 bg-gray-warm xl:bg-transparent">
+      <div className="hidden xl:block absolute transform xl:-skew-y-12 w-full h-160 origin-top-left bg-silk rounded-full rounded-tr-none"></div>
+      <div className="relative pt-16 pb-16 xl:pt-0 xl:-mt-24 xl:mb-10 bg-silk xl:bg-transparent">
         <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto relative z-10 px-6 lg:px-14 xl:px-6">
           <div className="col-span-full md:col-span-5 flex justify-center items-center md:justify-start md:flex-none">
             <img className="w-72 mb-10 md:mb-0 md:w-full bg-transparent shadow-medium" src="podcast.jpg" />
@@ -177,10 +177,10 @@ export default function Home() {
           <div className="md:col-span-1"></div>
           <div className="col-span-full md:col-span-6 flex items-center">
             <div className="">
-              <h3 className="text-lg font-bold text-purple-600 text-opacity-80 mb-3">Podcast host</h3>
+              <h3 className="text-lg font-bold text-purpz text-opacity-80 mb-3">Podcast host</h3>
               <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Learn from the best.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I host the <span className="text-black text-opacity-80 font-medium">Jered O Show</span>. Each episode we meet with company leaders or pioneering researchers to uncover the practice of world-class teams.</p>
-              <button className="bg-purple-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Listen to the podcast</button>
+              <button className="bg-purpz bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Listen to the podcast</button>
               <div className="mt-14 grid grid-cols-2 gap-x-10">
                 <div className="col-span-1">
                   <div className="font-bold text-black text-opacity-90 text-xl mb-2">5/5</div>
@@ -203,38 +203,44 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-x-2 gap-y-10 md:gap-y-14 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
           <div className="col-span-full lg:col-span-6 flex items-center">
             <div>
-              <h3 className="text-lg font-bold text-blue-600 text-opacity-80 mb-3">Coming soon</h3>
+              <h3 className="text-lg font-bold text-secondary-500 text-opacity-80 mb-3">Coming soon</h3>
               <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Training programs that work.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">Unlock your full leadership potential in record time with strategic learning, a peer community, and personalized coaching.</p>
-              <button className="bg-blue-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Join the waitlist</button>
+              <button className="bg-secondary-500 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Join the waitlist</button>
             </div>
           </div>
           <div className="hidden lg:block lg:col-span-6"></div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Manage the transition</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Have you been thrown into the deep end like most? Avoid all the mistakes first-time managers make.</p>
-            <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
+            <a className="text-sm text-secondary-500 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Hire the best</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Find the top performers who will thrive under your leadership and persuade them to join your team.</p>
-            <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
+            <a className="text-sm text-secondary-500 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Maximize performance</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Equip yourself with powerful coaching skills to turn around a struggling employee and strengthen the high achievers.</p>
-            <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
+            <a className="text-sm text-secondary-500 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Scale your influence</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Learn to think like an executive. Build processes and a culture that attracts, retains, and enables world-class talent.</p>
-            <a className="text-sm text-blue-600 font-medium" href="#">Get notified</a>
+            <a className="text-sm text-secondary-500 font-medium" href="#">Get notified</a>
           </div>
         </div>
       </div>
       {/* Training Section */}
 
-      <div className="text-center text-xs text-gray-400 mb-6">&copy; Odegard Research. All rights reserved.</div>
+      <div className="max-w-screen-xl mx-auto flex text-xs text-gray-400 mb-6 pt-6 border-t justify-between">
+        <p className="pl-4 xl:pl-0">&copy; Odegard Research. All rights reserved.</p>
+        <div className="space-x-8 pr-4 xl:pr-0">
+          <a className="text-gray-800" href="https://www.linkedin.com/in/jered-odegard/">LinkedIn</a>
+          <a className="text-gray-800" href="mailto:j@jeredodegard.com">Email</a>
+        </div>
+      </div>
     </div>
   )
 }

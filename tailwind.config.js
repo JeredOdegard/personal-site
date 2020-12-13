@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: false, // or 'media' or 'class'
@@ -22,7 +24,12 @@ module.exports = {
       colors: {
         gray: {
           'warm': '#F4F2EC'
-        }
+        },
+        primary: colors.rose,
+        secondary: colors.lightBlue,
+        tertiary: colors.yellow,
+        silk: '#f8f7ff',
+        purpz: '#6347ff'
       },
     },
   },
