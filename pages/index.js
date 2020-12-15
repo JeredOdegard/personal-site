@@ -144,17 +144,17 @@ export default function Home() {
               <h3 className="text-lg font-bold text-tertiary-600 text-opacity-80 mb-3">Certified coach</h3>
               <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Fast-track your growth.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I help high performing professionals and executives achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
-              <button className="bg-tertiary-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button>
+              <a href="/coaching"><button className="bg-tertiary-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button></a>
               <div className="mt-14 grid grid-cols-2 gap-x-10 gap-y-10">
                 <div className="col-span-full sm:col-span-1">
                   <div className="font-medium text-black text-opacity-90 text-sm mb-2">A plan that works for you</div>
                   <p className="text-black text-opacity-70 text-sm mb-2">My secret is adapting the approach to each person. Together, we'll find a path that leverages what makes you unique.</p>
-                  <a className="text-sm text-tertiary-600 font-medium" href="#">Discover yours</a>
+                  <a className="text-sm text-tertiary-600 font-medium" href="/coaching">Discover yours</a>
                 </div>
                 <div className="col-span-full sm:col-span-1">
                   <div className="font-medium text-black text-opacity-90 text-sm mb-2">Breakthrough insight</div>
                   <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your awareness. After our conversations, you'll leave with clarity and motivation unlike before.</p>
-                  <a className="text-sm text-tertiary-600 font-medium" href="#">How it works</a>
+                  <a className="text-sm text-tertiary-600 font-medium" href="/coaching">How it works</a>
                 </div>
               </div>
             </div>

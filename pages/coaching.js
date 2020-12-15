@@ -52,10 +52,10 @@ export default function Coaching() {
 
               {/* Nav Items */}
               <nav className="hidden md:flex space-x-8 ml-24 text-base lg:text-lg font-bold">
-                <a className="text-black text-opacity-70 hover:text-black" href="/">Home</a>
+                <a className="text-black text-opacity-50 hover:text-black" href="/">Home</a>
                 <a className="text-black" href="/coaching">Coaching</a>
-                <a className="text-black text-opacity-70 hover:text-black" href="/podcast">Podcast</a>
-                <a className="text-black text-opacity-70 hover:text-black" href="/about">About</a>
+                <a className="text-black text-opacity-50 hover:text-black" href="/podcast">Podcast</a>
+                <a className="text-black text-opacity-50 hover:text-black" href="/about">About</a>
               </nav>
               {/* Nav Items - End */}
 
@@ -81,11 +81,28 @@ export default function Coaching() {
       </div>
 
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6 mt-10">
-        <div className="col-span-full lg:col-span-9">
+        <div className="col-span-full lg:col-span-8">
           <h1 className="text-black text-5xl md:text-8xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">Coaching</h1>
-          <p className="text-3xl text-black text-opacity-50 mb-10 leading-relaxed">My purpose is to help create more authentic and capable leaders. If you’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement.</p>
+          <p className="text-3xl text-black text-opacity-50 mb-10 leading-relaxed">Behind most top performing executives, athletes, and entrepreneurs is a great coach. How come?</p>
         </div>
-        <div className="col-span-full lg:col-span-3">
+        <div className="col-span-full lg:col-span-4">
+        </div>
+      </div>
+
+      <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
+        <div className="col-span-full lg:col-span-8">
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">Maybe you</h1>
+          <ul className="text-xl text-black text-opacity-75 list-inside space-y-4 list-disc">
+            <li>Have a solid career on paper</li>
+            <li>Feel off track</li>
+            <li>Seem slow or stuck</li>
+            <li>Need more motivation</li>
+            <li>Know you're capable of more</li>
+            <li>Aren't pursuing what you really want</li>
+            <li>Are making a big change</li>
+          </ul>
+        </div>
+        <div className="col-span-full lg:col-span-4">
         </div>
       </div>
 
@@ -96,13 +113,17 @@ export default function Coaching() {
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
-          <h1 className="text-black text-4xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">How it works</h1>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">My purpose is to help create more authentic and capable leaders. If you’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <div className="shadow-xl border border-gray-200 rounded-xl p-8 mb-10">
-            <h4 className="text-xl text-black mb-4 font-extrabold">Get to know each other</h4>
-            <p className="text-xl text-black text-opacity-75 mb-8 leading-normal">Faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-            <button className="bg-tertiary-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Schedule now</button>
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">One realization away</h1>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">My purpose is to help create more authentic and capable leaders. If you’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <div className="border-t border-b border-gray-200 py-8 mb-10 md:flex justify-between items-center gap-x-10">
+            <div>
+              <h4 className="text-2xl text-black text-opacity-90 mb-4 font-extrabold">Could we be a fit?</h4>
+              <p className="text-xl text-black text-opacity-75 leading-relaxed">Each coach is unique. The best way to see if we'd work well together is to meet. Give my coaching a try with a free sample session.</p>
+            </div>
+            <div className="mt-4 md:mt-0">
+              <button className="w-40 bg-black bg-opacity-90 px-5 py-2 font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Book now</button>
+            </div>
           </div>
         </div>
         <div className="col-span-full lg:col-span-2">
@@ -112,8 +133,9 @@ export default function Coaching() {
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">My purpose is to help create more authentic and capable leaders. If you’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">My purpose is to help create more authentic and capable leaders. If you’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10 leading-tight">Misfit relationship</h1>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
         </div>
         <div className="col-span-full lg:col-span-2">
         </div>
@@ -126,9 +148,11 @@ export default function Coaching() {
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
-          <h1 className="text-black text-4xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">Environment matters</h1>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10 leading-tight">A dynamic partnership</h1>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
         </div>
         <div className="col-span-full lg:col-span-2">
         </div>
@@ -141,7 +165,7 @@ export default function Coaching() {
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
-          <h1 className="text-black text-4xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">Lasting impact</h1>
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">Lasting impact</h1>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
         </div>
@@ -153,29 +177,48 @@ export default function Coaching() {
         <img className="w-full rounded-md" src="coaching_4.jpg" />
       </div>
 
+      <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6 mb-10">
+        <div className="col-span-2"></div>
+        <div className="col-span-full lg:col-span-8">
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+        </div>
+        <div className="col-span-full lg:col-span-2">
+        </div>
+        <div className="col-span-4 bg-red-100 w-full h-48"></div>
+        <div className="col-span-4 bg-red-100 w-full h-48"></div>
+        <div className="col-span-4 bg-red-100 w-full h-48"></div>
+      </div>
+
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
-          <h1 className="text-black text-4xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">Offerings</h1>
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">Offerings</h1>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
           <div className="mt-14 grid grid-cols-2 gap-x-10 gap-y-10 mb-10">
             <div className="col-span-full sm:col-span-1">
               <div className="font-bold text-black text-opacity-90 mb-2">Standard package</div>
               <p className="text-black text-opacity-75 mb-2">My secret is adapting the approach to each person. Together, we'll find a path that leverages what makes you unique.</p>
-              <a className="text-sm text-tertiary-600 font-medium" href="#">Let's talk</a>
+              <a className="text-yellow-600 font-medium" href="/contact">I'm interested</a>
             </div>
             <div className="col-span-full sm:col-span-1">
               <div className="font-bold text-black text-opacity-90 mb-2">Month-to-month</div>
               <p className="text-black text-opacity-75 mb-2">Coaching will double your awareness. After our conversations, you'll leave with clarity and motivation unlike before.</p>
-              <a className="text-sm text-tertiary-600 font-medium" href="#">Sign up</a>
+              <a className="text-yellow-600 font-medium" href="/contact">I'm interested</a>
             </div>
           </div>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <div className="bg-tertiary-50 rounded-xl p-8">
-            <h4 className="text-xl text-black mb-4 font-extrabold">Get to know each other</h4>
-            <p className="text-xl text-black text-opacity-75 mb-8 leading-normal">Faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-            <button className="bg-tertiary-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Schedule now</button>
+
+          <div className="border-t border-gray-200 py-8 mb-10 md:flex justify-between items-center gap-x-10">
+            <div>
+              <h4 className="text-2xl text-black text-opacity-90 mb-4 font-extrabold">Could we be a fit?</h4>
+              <p className="text-xl text-black text-opacity-75 leading-relaxed">Each coach is unique. The best way to see if we'd work well together is to meet. Give my coaching a try with a free sample session.</p>
+            </div>
+            <div className="mt-4 md:mt-0">
+              <button className="w-40 bg-black bg-opacity-90 px-5 py-2 font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Book now</button>
+            </div>
           </div>
+
         </div>
         <div className="col-span-full lg:col-span-2">
         </div>
