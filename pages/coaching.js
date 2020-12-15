@@ -92,14 +92,13 @@ export default function Coaching() {
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
         <div className="col-span-full lg:col-span-8">
           <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">Maybe you</h1>
-          <ul className="text-xl text-black text-opacity-75 list-inside space-y-4 list-disc">
-            <li>Have a solid career on paper</li>
+          <ul className="text-xl text-black text-opacity-75 list-inside space-y-4 list-disc mb-4">
+            <li>Have a solid career on paper but</li>
             <li>Feel off track</li>
-            <li>Seem slow or stuck</li>
-            <li>Need more motivation</li>
+            <li>Lack motivation</li>
+            <li>Aren’t really being yourself</li>
             <li>Know you're capable of more</li>
-            <li>Aren't pursuing what you really want</li>
-            <li>Are making a big change</li>
+            <li>Want a big change</li>
           </ul>
         </div>
         <div className="col-span-full lg:col-span-4">
@@ -114,8 +113,7 @@ export default function Coaching() {
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
           <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">One realization away</h1>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">My purpose is to help create more authentic and capable leaders. If you’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">Our understanding of ourselves and the situation is what gives us the ability to take action and produce new results. Many of us plateau or feel stuck when we’ve already taken action on what we know. We’re stuck in the phase illustrated above called Confusion. It takes a while to get out of this place alone. For some, it can take a very long time. But it’s worth pushing through because once you find insight, you enable a new level of performance. And right now, you’re only one realization away.</p>
           <div className="border-t border-b border-gray-200 py-8 mb-10 md:flex justify-between items-center gap-x-10">
             <div>
               <h4 className="text-2xl text-black text-opacity-90 mb-4 font-extrabold">Could we be a fit?</h4>
@@ -133,9 +131,18 @@ export default function Coaching() {
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">My purpose is to help create more authentic and capable leaders. If you’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10 leading-tight">Misfit relationship</h1>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10 leading-tight">You're wanting</h1>
+          <ul className="text-xl text-black text-opacity-75 list-inside space-y-4 list-disc mb-20">
+            <li>Faster growth</li>
+            <li>Higher performance</li>
+            <li>A sense of direction</li>
+            <li>Excitement and enthusiasm</li>
+            <li>Meaningful work</li>
+            <li>A deeper understanding of who you are</li>
+            <li>Confidence to pursue what you really want</li>
+          </ul>
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10 leading-tight">Misfit help</h1>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">If you’ve been stuck for a while or are just looking to move faster, you’ve probably asked for help. The first person most people reach out to is a friend or colleague. The friends who are accomplished are the best. You tell them your situation and they give you their thoughts. But if your friends are anything like mine, their advice, while temporarily helpful, didn’t lead to lasting change. So you keep looking.</p>
         </div>
         <div className="col-span-full lg:col-span-2">
         </div>
@@ -148,11 +155,14 @@ export default function Coaching() {
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10 leading-tight">A dynamic partnership</h1>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">Maybe somebody with more experience will help? If you’re lucky, you also have a mentor. This is someone who is further along in their career or life than you who can share their personal experience. But if you’re reading this, chances are that didn’t work either. Mentors are an excellent resource for learning from someone else’s experience. This is useful when you’re building a hard skill and want an example of how it can be done well. But this isn’t helpful when you’re not sure what you need to improve or what you want in the first place. And very rarely does someone else’s experience lead to profound insight for you.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">This is why the top performers work with a coach.</p>
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10 leading-tight">Your dyanmic partner</h1>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">They want someone who will know them inside and out. Because the most profound insight comes not from advice but from thoughtful questions. And this is what I do extremely well as a coach: I ask really good questions. I ask questions because that’s how we’ll uncover the answers nobody else has been able to provide. The truth is, you have the right answers already locked inside. You just need someone to understand you and ask the right questions.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">I do this to move you towards realization and to increase action. This translates to new heights in your performance. That is my focus as your coach. We accomplish this in several ways. For example, I reveal your unique strengths, recurring patterns, and blindspots and give you the tools to work with them. This increases your overall self-awareness and allows you to make better decisions with a richer set of data. I’m also an experienced thought partner. I create an environment where the best learning occurs. To me, the best learning occurs with a combination of trust, playfulness, and focus.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal"><span className="font-bold">Trust:</span> In order to move the conversation from the mundane to the meaningful, from the surface to the core, there must be a high level of trust. The coaching conversation is safe, supportive and without judgment.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal"><span className="font-bold">Playfulness:</span> When everything needs to be perfect, we freeze and learn slow. We are the most creative and willing to explore in play, where some messiness is allowed. This is where our best ideas shake free. On top of that, it makes the coaching experience enjoyable.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal"><span className="font-bold">Focus:</span> In a coaching session, we have a limited amount of time together. Whether or not we’re deliberate and intentional with it determines its impact. We work together to set a clear focus, which maximizes your value and results.</p>
         </div>
         <div className="col-span-full lg:col-span-2">
         </div>
@@ -166,8 +176,8 @@ export default function Coaching() {
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
           <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">Lasting impact</h1>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">In short, the coaching relationship is a series of one hour conversations with a broader outcome defined at the beginning of our relationship. With each conversation, we focus on where you are in the present moment, so that you are empowered to apply your learning right away. Every conversation we have compounds. The learnings from one conversation build on the previous sessions.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">This means that the most powerful impact a coach can have happens over time. This is the reason why I ask clients to commit to working together for at least three months. It allows us to go deep, achieve the value you’re after, and build habits that will last.</p>
         </div>
         <div className="col-span-full lg:col-span-2">
         </div>
@@ -180,8 +190,7 @@ export default function Coaching() {
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6 mb-10">
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">I’ve completed this journey many times now, both as a leader within a company and running my own practice. I’ve been privileged to partner with executives, directors, designers, software engineers, and product managers at leading companies. Here’s what they have to say:</p>
         </div>
         <div className="col-span-full lg:col-span-2">
         </div>
@@ -209,7 +218,7 @@ export default function Coaching() {
           </div>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
 
-          <div className="border-t border-gray-200 py-8 mb-10 md:flex justify-between items-center gap-x-10">
+          <div className="border-t border-b border-gray-200 py-8 mb-10 md:flex justify-between items-center gap-x-10">
             <div>
               <h4 className="text-2xl text-black text-opacity-90 mb-4 font-extrabold">Could we be a fit?</h4>
               <p className="text-xl text-black text-opacity-75 leading-relaxed">Each coach is unique. The best way to see if we'd work well together is to meet. Give my coaching a try with a free sample session.</p>
@@ -219,6 +228,17 @@ export default function Coaching() {
             </div>
           </div>
 
+        </div>
+        <div className="col-span-full lg:col-span-2">
+        </div>
+      </div>
+
+      <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
+        <div className="col-span-2"></div>
+        <div className="col-span-full lg:col-span-8">
+          <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">Who am I</h1>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Prior to becoming a coach, I was an accomplished technologist. I spent 11 years as an engineer, designer, and manager. This makes me well versed in the unique challenges of being successful in a competitive space. I climbed the ladder and reached my goals quickly. I helped the people on my teams do the same. And I know I can help you too.</p>
+          <button className="bg-black bg-opacity-90 px-5 py-2 font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Read my story</button>
         </div>
         <div className="col-span-full lg:col-span-2">
         </div>
