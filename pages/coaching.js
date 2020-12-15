@@ -158,8 +158,8 @@ export default function Coaching() {
           <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">Maybe somebody with more experience will help? If you’re lucky, you also have a mentor. This is someone who is further along in their career or life than you who can share their personal experience. But if you’re reading this, chances are that didn’t work either. Mentors are an excellent resource for learning from someone else’s experience. This is useful when you’re building a hard skill and want an example of how it can be done well. But this isn’t helpful when you’re not sure what you need to improve or what you want in the first place. And very rarely does someone else’s experience lead to profound insight for you.</p>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">This is why the top performers work with a coach.</p>
           <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10 leading-tight">Your dyanmic partner</h1>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">They want someone who will know them inside and out. Because the most profound insight comes not from advice but from thoughtful questions. And this is what I do extremely well as a coach: I ask really good questions. I ask questions because that’s how we’ll uncover the answers nobody else has been able to provide. The truth is, you have the right answers already locked inside. You just need someone to understand you and ask the right questions.</p>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">I do this to move you towards realization and to increase action. This translates to new heights in your performance. That is my focus as your coach. We accomplish this in several ways. For example, I reveal your unique strengths, recurring patterns, and blindspots and give you the tools to work with them. This increases your overall self-awareness and allows you to make better decisions with a richer set of data. I’m also an experienced thought partner. I create an environment where the best learning occurs. To me, the best learning occurs with a combination of trust, playfulness, and focus.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">They want someone who will know them inside and out. Because the most profound insight comes not from advice but from thoughtful questions. And this is what I do extremely well as a coach: I ask really good questions. I ask questions because that’s how we’ll uncover the answers nobody else has been able to provide. The truth is, you have the right answers already locked inside. You just need someone who understands you and asks the right questions.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">I do this to move you towards realization and to increase action. This translates to new heights in your performance. That is my focus as your coach. We accomplish this in several additional ways. For example, I reveal your unique strengths, recurring patterns, and blindspots and give you the tools to work with them. This increases your overall self-awareness and allows you to make better decisions with a richer set of data. I’m also an experienced thought partner. I create an environment where the best learning occurs. To me, the best learning occurs with a combination of trust, playfulness, and focus.</p>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal"><span className="font-bold">Trust:</span> In order to move the conversation from the mundane to the meaningful, from the surface to the core, there must be a high level of trust. The coaching conversation is safe, supportive and without judgment.</p>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal"><span className="font-bold">Playfulness:</span> When everything needs to be perfect, we freeze and learn slow. We are the most creative and willing to explore in play, where some messiness is allowed. This is where our best ideas shake free. On top of that, it makes the coaching experience enjoyable.</p>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal"><span className="font-bold">Focus:</span> In a coaching session, we have a limited amount of time together. Whether or not we’re deliberate and intentional with it determines its impact. We work together to set a clear focus, which maximizes your value and results.</p>
@@ -203,22 +203,31 @@ export default function Coaching() {
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
           <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">Offerings</h1>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">It's important that the structure of our coaching relationship aligns with your goals. That's why I like to define the exact cadence and length of our sessions after meeting together for a free sample session. That said, the majority of my clients end up working with me under one of the following programs:</p>
           <div className="mt-14 grid grid-cols-2 gap-x-10 gap-y-10 mb-10">
             <div className="col-span-full sm:col-span-1">
               <div className="font-bold text-black text-opacity-90 mb-2">Standard package</div>
-              <p className="text-black text-opacity-75 mb-2">My secret is adapting the approach to each person. Together, we'll find a path that leverages what makes you unique.</p>
+              <ul className="list-disc text-black text-opacity-75 list-inside mb-4">
+                <li>6 hours of coaching</li>
+                <li>3 month commitment</li>
+                <li>10% price discount</li>
+                <li>Payment in full or amortized</li>
+              </ul>
               <a className="text-yellow-600 font-medium" href="/contact">I'm interested</a>
             </div>
             <div className="col-span-full sm:col-span-1">
               <div className="font-bold text-black text-opacity-90 mb-2">Month-to-month</div>
-              <p className="text-black text-opacity-75 mb-2">Coaching will double your awareness. After our conversations, you'll leave with clarity and motivation unlike before.</p>
+              <ul className="list-disc text-black text-opacity-75 list-inside mb-4">
+                <li>1-2 hours per month</li>
+                <li>No contract</li>
+                <li>Cancel anytime</li>
+                <li>Charged monthly</li>
+              </ul>
               <a className="text-yellow-600 font-medium" href="/contact">I'm interested</a>
             </div>
           </div>
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">You’re still selecting an executive coach or career consultant we are happy to walk you through case studies of clients in your field whom we’ve served, or clients who’ve faced comparable challenges and how we delivered value to their advancement. This way you can get a feel for who we serve.</p>
 
-          <div className="border-t border-b border-gray-200 py-8 mb-10 md:flex justify-between items-center gap-x-10">
+          <div className="border-b border-gray-200 py-8 md:flex justify-between items-center gap-x-10">
             <div>
               <h4 className="text-2xl text-black text-opacity-90 mb-4 font-extrabold">Could we be a fit?</h4>
               <p className="text-xl text-black text-opacity-75 leading-relaxed">Each coach is unique. The best way to see if we'd work well together is to meet. Give my coaching a try with a free sample session.</p>
