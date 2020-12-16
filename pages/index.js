@@ -1,5 +1,7 @@
 import Head from "next/head"
 
+import MobileMenu from "components/mobilemenu"
+
 export default function Home() {
   return (
     <div id="main" className="antialiased">
@@ -10,29 +12,7 @@ export default function Home() {
         <link rel="icon" type="image/svg+xml" href="favicon.svg" />
       </Head>
 
-      {/* Mobile Nav */}
-      <div id="mobileMenu" className="hidden w-full h-full fixed z-50 bg-white p-6 overflow-y-auto">
-        <div className="w-full flex justify-between mb-6">
-          <div className="h-20 w-16 bg-gray-900 flex items-center justify-center fill-current text-white relative -top-6 rounded-b-md">
-            <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-              <path d="M5.384 31.168l3.348-3.636c.936.72 2.082 1.26 3.438 1.62 1.356.36 2.778.54 4.266.54 2.016 0 3.888-.324 5.616-.972 1.728-.648 3.228-1.566 4.5-2.754 1.272-1.188 2.268-2.622 2.988-4.302.72-1.68 1.08-3.54 1.08-5.58 0-3.48-1.056-6.384-3.168-8.712l3.204-3.456L27.272 1l-3.24 3.672a13.895 13.895 0 00-3.51-1.422c-1.26-.324-2.61-.486-4.05-.486-2.016 0-3.894.312-5.634.936-1.74.624-3.24 1.512-4.5 2.664-1.26 1.152-2.25 2.55-2.97 4.194-.72 1.644-1.08 3.486-1.08 5.526 0 1.704.258 3.282.774 4.734a11.878 11.878 0 002.25 3.87L2 28.288l3.384 2.88zm5.868-12.744c-.216-.528-.324-1.272-.324-2.232 0-.792.114-1.548.342-2.268.228-.72.57-1.356 1.026-1.908a5.054 5.054 0 011.728-1.332c.696-.336 1.5-.504 2.412-.504.816 0 1.5.108 2.052.324l-7.236 7.92zm5.112 3.672c-.384 0-.762-.024-1.134-.072a3.343 3.343 0 01-.954-.252l7.236-7.92c.24.6.36 1.356.36 2.268 0 .792-.114 1.548-.342 2.268a5.631 5.631 0 01-1.026 1.908 4.867 4.867 0 01-1.728 1.314c-.696.324-1.5.486-2.412.486z" fillRule="nonzero"/>
-            </svg>
-          </div>
-          <button className="h-14 w-14 p-2 fill-current text-gray-800 hover:bg-gray-200 rounded-xl" onClick={toggleNav}>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <nav className="space-y-4 lg:space-y-10 text-5xl lg:text-6xl text-black font-bold">
-          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/">Home</a>
-          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/coaching">Coaching</a>
-          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/podcast">Podcast</a>
-          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/about">About</a>
-          <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/about">Contact</a>
-        </nav>
-      </div>
-      {/* Mobile Nav - End */}
+      <MobileMenu click={toggleNav} />
 
       <div className="absolute transform top-0 -skew-y-12 w-full h-128 origin-top-left bg-yellow-300 xl:rounded-full"></div>
 
@@ -86,7 +66,7 @@ export default function Home() {
       <div className="max-w-screen-xl mx-auto -mt-96 md:-mt-72 relative z-10 px-6 lg:px-14 xl:px-6">
         <h1 className="text-black text-5xl md:text-8xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">Leadership fascinates me.</h1>
         <p className="text-2xl text-black text-opacity-60 mb-10">My purpose is to help create more authentic and capable leaders.</p>
-        <button className="bg-gray-800 bg-opacity-95 px-6 py-2.5 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Read my story</button>
+        <button className="bg-black bg-opacity-90 px-6 py-2.5 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Read my story</button>
       </div>
       {/* Hero - End */}
 
@@ -144,7 +124,7 @@ export default function Home() {
               <h3 className="text-lg font-bold text-tertiary-600 text-opacity-80 mb-3">Certified coach</h3>
               <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Fast-track your growth.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I help high performing professionals and executives achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
-              <a href="/coaching"><button className="bg-tertiary-600 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button></a>
+              <a href="/coaching"><button className="border border-tertiary-600 bg-tertiary-50 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-tertiary-600 transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button></a>
               <div className="mt-14 grid grid-cols-2 gap-x-10 gap-y-10">
                 <div className="col-span-full sm:col-span-1">
                   <div className="font-medium text-black text-opacity-90 text-sm mb-2">A plan that works for you</div>
@@ -180,7 +160,7 @@ export default function Home() {
               <h3 className="text-lg font-bold text-purpz text-opacity-80 mb-3">Podcast host</h3>
               <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Learn from the best.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I host the <span className="text-black text-opacity-80 font-medium">Jered O Show</span>. Each episode we meet with company leaders or pioneering researchers to uncover the practice of world-class teams.</p>
-              <button className="bg-purpz bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Listen to the podcast</button>
+              <button className="border border-purpz bg-purple-100 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-purpz transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Listen to the podcast</button>
               <div className="mt-14 grid grid-cols-2 gap-x-10">
                 <div className="col-span-1">
                   <div className="font-bold text-black text-opacity-90 text-xl mb-2">5/5</div>
@@ -206,7 +186,7 @@ export default function Home() {
               <h3 className="text-lg font-bold text-secondary-500 text-opacity-80 mb-3">Coming soon</h3>
               <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Training programs that work.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">Unlock your full leadership potential in record time with strategic learning, a peer community, and personalized coaching.</p>
-              <button className="bg-secondary-500 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Join the waitlist</button>
+              <button className="border border-secondary-500 bg-secondary-50 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-secondary-500 transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Join the waitlist</button>
             </div>
           </div>
           <div className="hidden lg:block lg:col-span-6"></div>

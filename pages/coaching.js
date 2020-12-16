@@ -60,9 +60,9 @@ export default function Coaching() {
         </div>
       </div>
 
-      <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6 mt-10">
+      <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6 mt-32">
         <div className="col-span-full lg:col-span-8">
-          <h1 className="text-black text-5xl md:text-8xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">Coaching</h1>
+          <h1 className="text-black text-5xl md:text-8xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10 bg-tertiary-400 inline-block">Coaching</h1>
           <p className="text-3xl text-black text-opacity-50 mb-10 leading-relaxed">Behind most top performing executives, athletes, and entrepreneurs is a great coach. Why is that?</p>
         </div>
         <div className="col-span-full lg:col-span-4">
@@ -193,7 +193,7 @@ export default function Coaching() {
                 <li>10% price discount</li>
                 <li>Payment in full or amortized</li>
               </ul>
-              <a className="text-yellow-600 font-medium" href="/contact">I'm interested</a>
+              <a className="text-tertiary-600 font-medium" href="/contact">I'm interested</a>
             </div>
             <div className="col-span-full sm:col-span-1">
               <div className="font-bold text-black text-opacity-90 mb-2">Month-to-month</div>
@@ -203,7 +203,7 @@ export default function Coaching() {
                 <li>Cancel anytime</li>
                 <li>Charged monthly</li>
               </ul>
-              <a className="text-yellow-600 font-medium" href="/contact">I'm interested</a>
+              <a className="text-tertiary-600 font-medium" href="/contact">I'm interested</a>
             </div>
           </div>
 
