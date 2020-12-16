@@ -2,9 +2,9 @@ import Head from "next/head"
 
 export async function getStaticProps() {
   // Fetch Jered O Show RSS Feed
-  const Parser = require("rss-parser");
-  const parser = new Parser();
-  const podcast = await parser.parseURL("https://feeds.transistor.fm/jered-o-show");
+  const Parser = require("rss-parser")
+  const parser = new Parser()
+  const podcast = await parser.parseURL("https://feeds.transistor.fm/jered-o-show")
 
   return {
     props: { podcast },
