@@ -1,10 +1,11 @@
 import Head from "next/head"
-
+import Link from "next/link"
+import Container from "components/container"
 import MobileMenu from "components/mobilemenu"
 
 export default function Home() {
   return (
-    <div id="main" className="antialiased">
+    <Container>
 
       <Head>
         <title>Jered Odegard : Leadership, career, and executive coaching</title>
@@ -33,10 +34,10 @@ export default function Home() {
 
               {/* Nav Items */}
               <nav className="hidden md:flex space-x-8 ml-24 text-base lg:text-lg font-bold">
-                <a className="text-white" href="/">Home</a>
-                <a className="text-white text-opacity-70 hover:text-white" href="/coaching">Coaching</a>
-                <a className="text-white text-opacity-70 hover:text-white" href="/podcast">Podcast</a>
-                <a className="text-white text-opacity-70 hover:text-white" href="/about">About</a>
+                <Link href="/"><a className="text-white">Home</a></Link>
+                <a className="text-white text-opacity-70 hover:text-white" href="https://odegard.group">Coaching</a>
+                <Link href="/podcast"><a className="text-white text-opacity-70 hover:text-white" href="/podcast">Podcast</a></Link>
+                <Link href="/about"><a className="text-white text-opacity-70 hover:text-white" href="/about">About</a></Link>
               </nav>
               {/* Nav Items - End */}
 
@@ -66,7 +67,7 @@ export default function Home() {
       <div className="max-w-screen-xl mx-auto -mt-96 md:-mt-72 relative z-10 px-6 lg:px-14 xl:px-6">
         <h1 className="text-black text-5xl md:text-8xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">Leadership fascinates me.</h1>
         <p className="text-2xl text-black text-opacity-60 mb-10">My purpose is to help create more authentic and capable leaders.</p>
-        <button className="bg-black bg-opacity-90 px-6 py-2.5 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Read my story</button>
+        <a href="/about"><button className="bg-black bg-opacity-90 px-6 py-2.5 text-sm font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Read my story</button></a>
       </div>
       {/* Hero - End */}
 
@@ -122,19 +123,17 @@ export default function Home() {
           <div className="col-span-full lg:col-span-6 flex items-center">
             <div>
               <h3 className="text-lg font-bold text-tertiary-600 text-opacity-80 mb-3">Certified coach</h3>
-              <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Fast-track your growth.</h2>
+              <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Get unstuck and start growing.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I help high performing professionals and executives achieve their goals. I'm confident I can accelerate you towards where you want to be.</p>
-              <a href="/coaching"><button className="border border-tertiary-600 bg-tertiary-50 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-tertiary-600 transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button></a>
+              <a href="https://odegard.group"><button className="border border-tertiary-600 bg-tertiary-50 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-tertiary-600 transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">What is coaching?</button></a>
               <div className="mt-14 grid grid-cols-2 gap-x-10 gap-y-10">
                 <div className="col-span-full sm:col-span-1">
-                  <div className="font-medium text-black text-opacity-90 text-sm mb-2">A plan that works for you</div>
-                  <p className="text-black text-opacity-70 text-sm mb-2">My secret is adapting the approach to each person. Together, we'll find a path that leverages what makes you unique.</p>
-                  <a className="text-sm text-tertiary-600 font-medium" href="/coaching">Discover yours</a>
+                  <div className="font-medium text-black text-opacity-90 text-sm mb-2">Get to where you want to be in your career</div>
+                  <p className="text-black text-opacity-70 text-sm mb-2">Whether you’re looking to get a promotion, change jobs, change careers, do better work, or start a company, coaching is the answer.</p>
                 </div>
                 <div className="col-span-full sm:col-span-1">
-                  <div className="font-medium text-black text-opacity-90 text-sm mb-2">Breakthrough insight</div>
-                  <p className="text-black text-opacity-70 text-sm mb-2">Coaching will double your awareness. After our conversations, you'll leave with clarity and motivation unlike before.</p>
-                  <a className="text-sm text-tertiary-600 font-medium" href="/coaching">How it works</a>
+                  <div className="font-medium text-black text-opacity-90 text-sm mb-2">Build a team that loves working for you</div>
+                  <p className="text-black text-opacity-70 text-sm mb-2">Let's discover your unique leadership style and the most effective techniques for your company and team. I am your personal leadership guru.</p>
                 </div>
               </div>
             </div>
@@ -158,9 +157,9 @@ export default function Home() {
           <div className="col-span-full md:col-span-6 flex items-center">
             <div className="">
               <h3 className="text-lg font-bold text-purpz text-opacity-80 mb-3">Podcast host</h3>
-              <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Learn from the best.</h2>
-              <p className="text-black text-opacity-60 text-lg mb-6 font-medium">I host the <span className="text-black text-opacity-80 font-medium">Jered O Show</span>. Each episode we meet with company leaders or pioneering researchers to uncover the practice of world-class teams.</p>
-              <button className="border border-purpz bg-purple-100 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-purpz transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Listen to the podcast</button>
+              <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Be yourself at work and outperform your peers.</h2>
+              <p className="text-black text-opacity-60 text-lg mb-6 font-medium">Check out the <span className="text-black text-opacity-80 font-medium">Jered O Show</span>. Each episode we meet with company leaders or pioneering experts to uncover the unique practice of top individuals and teams.</p>
+              <a href="/podcast"><button className="border border-purpz bg-purple-100 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-purpz transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Listen to the podcast</button></a>
               <div className="mt-14 grid grid-cols-2 gap-x-10">
                 <div className="col-span-1">
                   <div className="font-bold text-black text-opacity-90 text-xl mb-2">5/5</div>
@@ -184,44 +183,40 @@ export default function Home() {
           <div className="col-span-full lg:col-span-6 flex items-center">
             <div>
               <h3 className="text-lg font-bold text-secondary-500 text-opacity-80 mb-3">Coming soon</h3>
-              <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Training programs that work.</h2>
-              <p className="text-black text-opacity-60 text-lg mb-6 font-medium">Unlock your full leadership potential in record time with strategic learning, a peer community, and personalized coaching.</p>
-              <button className="border border-secondary-500 bg-secondary-50 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-secondary-500 transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Join the waitlist</button>
+              <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Meet leaders like you.</h2>
+              <p className="text-black text-opacity-60 text-lg mb-6 font-medium">Join this exclusive leadership incubator that includes virtual lectures, a peer community, and personalized coaching.</p>
+              <a href="https://forms.gle/REkFDEUQkaB59zbC6"><button className="border border-secondary-500 bg-secondary-50 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-secondary-500 transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Join the waitlist</button></a>
             </div>
           </div>
           <div className="hidden lg:block lg:col-span-6"></div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Manage the transition</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Have you been thrown into the deep end like most? Avoid all the mistakes first-time managers make.</p>
-            <a className="text-sm text-secondary-500 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Hire the best</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Find the top performers who will thrive under your leadership and persuade them to join your team.</p>
-            <a className="text-sm text-secondary-500 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Maximize performance</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Equip yourself with powerful coaching skills to turn around a struggling employee and strengthen the high achievers.</p>
-            <a className="text-sm text-secondary-500 font-medium" href="#">Get notified</a>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-3">
             <div className="font-medium text-black text-opacity-90 text-sm mb-2">Scale your influence</div>
             <p className="text-black text-opacity-70 text-sm mb-2">Learn to think like an executive. Build processes and a culture that attracts, retains, and enables world-class talent.</p>
-            <a className="text-sm text-secondary-500 font-medium" href="#">Get notified</a>
           </div>
         </div>
       </div>
       {/* Training Section */}
 
       <div className="max-w-screen-xl mx-auto flex text-xs text-gray-400 mb-6 pt-6 border-t justify-between">
-        <p className="pl-4 xl:pl-0">&copy; Odegard Research. All rights reserved.</p>
+        <p className="pl-4 xl:pl-0">&copy; Jered Odegard. All rights reserved.</p>
         <div className="space-x-8 pr-4 xl:pr-0">
           <a className="text-gray-800" href="https://www.linkedin.com/in/jered-odegard/">LinkedIn</a>
-          <a className="text-gray-800" href="mailto:j@jeredodegard.com">Email</a>
+          <a className="text-gray-800" href="mailto:hello@jeredodegard.com">Email</a>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }
 

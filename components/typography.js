@@ -1,19 +1,25 @@
 function Headline({ children }) {
   return (
-    <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight font-extrabold text-gray-900 tracking-tight mt-8 mb-6 font-serif">{children}</h1>
+    <h1 className="text-black text-5xl md:text-8xl md:max-w-screen-sm font-bold mb-4 text-opacity-90 mt-10">{children}</h1>
   )
 }
 
 function Subtitle({ children }) {
   return (
-    <h2 className="text-2xl font-extrabold my-2 text-gray-600">{children}</h2>
+    <p className="text-2xl text-black text-opacity-60 mb-10">{children}</p>
   )
 }
 
 function SectionTitle({ children }) {
   return (
-    <h3 className="text-lg font-bold my-2 text-gray-400">{children}</h3>
+    <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">{children}</h2>
   )
 }
 
-export { Headline, Subtitle, SectionTitle }
+function Paragraph({ children }) {
+  return (
+    <p className="text-xl text-black text-opacity-75 mb-8 leading-relaxed">{children}</p>
+  )
+}
+
+export { Headline, Subtitle, SectionTitle, Paragraph}

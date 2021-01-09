@@ -1,22 +1,28 @@
 import Head from "next/head"
-import NavBar from "components/navbar"
-import { Headline, Subtitle, SectionTitle } from "components/typography"
+import Link from "next/link"
+import Container from "components/container"
+import Navigation from "components/navigation"
+import Section from "components/section"
+import { Headline, Subtitle, SectionTitle, Paragraph } from "components/typography"
 
 function About() {
   return (
-    <div className="min-w-sm antialiased">
+    <Container>
       <Head>
         <title>About - Jered Odegard</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <NavBar />
+      <Navigation />
 
-      <main className="px-4 max-w-screen-lg mx-auto">
+      <Section>
         <Headline>About</Headline>
-        <Subtitle>Learn about me</Subtitle>
-      </main>
-    </div>
+        <Subtitle>Who are you?</Subtitle>
+        <SectionTitle>Subsection</SectionTitle>
+        <Paragraph>Our understanding of ourselves and the situation is what gives us the ability to take action and produce new results. Many of us plateau or feel stuck when we’ve already taken action on what we know. We’re stuck in the phase illustrated above called Confusion. It takes a while to get out of this place alone. For some, it can take a very long time. But it’s worth pushing through because once you find insight, you enable a new level of performance. And right now, you’re only one realization away.</Paragraph>
+        <Paragraph>You’ve probably already asked for help. The first person most people reach out to is a friend or colleague. Maybe someone whose ability you respect. You tell them your situation and they give you their thoughts. If your friends are anything like mine, their advice, while interesting, didn’t lead to lasting change. So you kept looking.</Paragraph>
+      </Section>
+    </Container>
   );
 }
 
