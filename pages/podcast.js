@@ -4,13 +4,22 @@ import Navigation from "components/navigation"
 import { Headline, Subtitle, SectionTitle } from "components/typography"
 
 export async function getStaticProps() {
-  // Fetch Jered O Show RSS Feed
   const Parser = require("rss-parser")
   const parser = new Parser()
   const podcast = await parser.parseURL("https://feeds.transistor.fm/jered-o-show")
 
+  if (!podcast) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false,
+      },
+    }
+  }
+
   return {
     props: { podcast },
+    revalidate: 300,
   }
 }
 
