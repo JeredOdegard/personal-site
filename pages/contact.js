@@ -17,8 +17,8 @@ export default function Contact() {
 
       <Section>
         <Headline>Let's talk</Headline>
-        <Subtitle>I would love to connect.</Subtitle>
-        <Paragraph>This page is still being built (by me). Please email <strong>hello@jeredodegard.com</strong> if you want to reach me.</Paragraph>
+        <Subtitle>What we can build together?</Subtitle>
+        <Paragraph>Because this page is not yet finished, please email <strong>hello@jeredodegard.com</strong> to start a conversation.</Paragraph>
       </Section>
     </Container>
   )
