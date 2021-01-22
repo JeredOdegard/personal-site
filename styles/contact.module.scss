@@ -1,0 +1,153 @@
+@use "screen";
+
+.contactForm {
+  padding: 0;
+}
+
+@media (min-width: screen.$sm) {
+  .contactForm {
+    max-width: screen.$sm;
+  }
+}
+
+.contactForm label {
+  display: block;
+  font-size: 1.125rem;
+}
+
+.contactForm input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #bbb;
+}
+
+.interests {
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+}
+
+.interests label {
+  font-size: 1rem;
+}
+
+.interests h2 {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+.interests input[type="checkbox"], .interests input[type="radio"] {
+  display: inline-block;
+  margin: .5rem;
+  width: 1.25rem;
+  height: 1.25em;
+  position: relative;
+  top: 2px;
+}
+
+.contactForm textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #bbb;
+  resize: vertical;
+}
+
+.contactForm .submit {
+  background: #000000;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  padding: .75rem 1.5rem;
+  border-radius: 10rem;
+  width: 100%;
+}
+
+@media (min-width: screen.$sm) {
+  .contactForm .submit {
+    width: auto;
+    padding: .75rem 3rem;
+  }
+}
+
+.loading, .error, .success {
+  max-width: 100%;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.loading {
+  color: #555555;
+  background: #eee;
+}
+
+.error {
+  color: #4D2323;
+  background: #EFB5B5;
+}
+
+.error svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: .5rem;
+  position: relative;
+  top: 2px;
+}
+
+.error li {
+  margin-bottom: .75rem;
+}
+
+.error li:last-child {
+  margin-bottom: 0;
+}
+
+.success {
+  color: green;
+  background: #B5EFC4;
+}
+
+.success svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: .5rem;
+  position: relative;
+  top: 2px;
+}
+
+/* Responsive elements */
+
+@media (min-width: screen.$xs) { // 320px
+
+}
+
+@media (min-width: screen.$sm) { // 640px
+
+}
+
+@media (min-width: screen.$md) { // 768px
+
+}
+
+@media (min-width: screen.$lg) { // 1024px
+
+}
+
+@media (min-width: screen.$xl) { // 1280px
+
+}
+
+@media (min-width: screen.$xxl) { // 1440px
+
+}
