@@ -100,7 +100,7 @@ export default function Coaching() {
               <p className="text-xl text-black text-opacity-75 leading-relaxed">Each coach is unique. The best way to see if we'd work well together is to meet. Give my coaching a try with a free sample session.</p>
             </div>
             <div className="mt-4 md:mt-0">
-              <button className="w-40 bg-black bg-opacity-90 px-5 py-2 font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Book now</button>
+              <a href="https://calendly.com/coachjered/sample"><button className="w-40 bg-black bg-opacity-90 px-5 py-2 font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Book now</button></a>
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@ export default function Coaching() {
               <p className="text-xl text-black text-opacity-75 leading-relaxed">Each coach is unique. The best way to see if we'd work well together is to meet. Give my coaching a try with a free sample session.</p>
             </div>
             <div className="mt-4 md:mt-0">
-              <button className="w-40 bg-black bg-opacity-90 px-5 py-2 font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Book now</button>
+              <a href="https://calendly.com/coachjered/sample"><button className="w-40 bg-black bg-opacity-90 px-5 py-2 font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Book now</button></a>
             </div>
           </div>
 
@@ -231,7 +231,7 @@ export default function Coaching() {
         <div className="col-span-full lg:col-span-8">
           <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10">About me</h1>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">Prior to becoming a coach, I was an accomplished technologist. I spent 11 years as an engineer, designer, and manager. This makes me well versed in the unique challenges of being successful in a competitive space. I climbed the ladder and reached my goals quickly. I helped the people on my teams do the same. And I know I can help you too.</p>
-          <button className="bg-black bg-opacity-90 px-5 py-2 font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Read my story</button>
+          <a href="/about"><button className="bg-black bg-opacity-90 px-5 py-2 font-medium rounded-full tracking-wide text-white shadow transform transition hover:shadow-lg hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Read my story</button></a>
         </div>
         <div className="col-span-full lg:col-span-2">
         </div>

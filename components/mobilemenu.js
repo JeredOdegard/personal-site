@@ -18,7 +18,7 @@ export default function MobileMenu({ click }) {
       </div>
       <nav className="space-y-4 lg:space-y-10 text-5xl lg:text-6xl text-black font-bold">
         <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/">Home</a>
-        <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="https://odegard.group">Coaching</a>
+        <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/coaching">Coaching</a>
         <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/podcast">Podcast</a>
         <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/about">About</a>
         <a className="block p-4 rounded hover:bg-gray-200 hover:text-gray-800" href="/contact">Contact</a>

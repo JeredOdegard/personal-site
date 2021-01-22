@@ -34,7 +34,7 @@ export default function Navigation({ children }) {
               {/* Nav Items */}
               <header className="hidden md:flex space-x-8 ml-24 text-base lg:text-lg font-bold">
                 <Link href="/"><a className={ currentPath === homeUrl ? activeLink : inactiveLink }>Home</a></Link>
-                <a href="https://odegard.group" className={ currentPath === coachingUrl ? activeLink : inactiveLink }>Coaching</a>
+                <Link href="/coaching"><a className={ currentPath === coachingUrl ? activeLink : inactiveLink }>Coaching</a></Link>
                 <Link href="/podcast"><a className={ currentPath === podcastUrl ? activeLink : inactiveLink }>Podcast</a></Link>
                 <Link href="/about"><a className={ currentPath === aboutUrl ? activeLink : inactiveLink }>About</a></Link>
               </header>

@@ -35,7 +35,7 @@ export default function Home() {
               {/* Nav Items */}
               <nav className="hidden md:flex space-x-8 ml-24 text-base lg:text-lg font-bold">
                 <Link href="/"><a className="text-white">Home</a></Link>
-                <a className="text-white text-opacity-70 hover:text-white" href="https://odegard.group">Coaching</a>
+                <Link href="/coaching"><a className="text-white text-opacity-70 hover:text-white">Coaching</a></Link>
                 <Link href="/podcast"><a className="text-white text-opacity-70 hover:text-white" href="/podcast">Podcast</a></Link>
                 <Link href="/about"><a className="text-white text-opacity-70 hover:text-white" href="/about">About</a></Link>
               </nav>
