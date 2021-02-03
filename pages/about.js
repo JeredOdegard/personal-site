@@ -17,11 +17,10 @@ function About() {
       <Navigation />
 
       <Section>
-        <Headline>Who is Jered?</Headline>
-        <Subtitle>From product leader to coach.</Subtitle>
+        <Headline>About me</Headline>
+        <Subtitle>Subtitle</Subtitle>
         <SectionTitle>Subsection</SectionTitle>
-        <Paragraph>Our understanding of ourselves and the situation is what gives us the ability to take action and produce new results. Many of us plateau or feel stuck when we’ve already taken action on what we know. We’re stuck in the phase illustrated above called Confusion. It takes a while to get out of this place alone. For some, it can take a very long time. But it’s worth pushing through because once you find insight, you enable a new level of performance. And right now, you’re only one realization away.</Paragraph>
-        <Paragraph>You’ve probably already asked for help. The first person most people reach out to is a friend or colleague. Maybe someone whose ability you respect. You tell them your situation and they give you their thoughts. If your friends are anything like mine, their advice, while interesting, didn’t lead to lasting change. So you kept looking.</Paragraph>
+        <Paragraph>I am still writing this page. Check back soon for updates. Meanwhile, you can take a look at my resume on LinkedIn <a className="text-purple-700 hover:text-purple-600" href="https://www.linkedin.com/in/jered-odegard/">here</a>.</Paragraph>
       </Section>
     </Container>
   );

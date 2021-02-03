@@ -135,7 +135,7 @@ export default function Coaching() {
       <div className="grid grid-cols-12 gap-x-2 gap-y-4 md:gap-y-10 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
         <div className="col-span-2"></div>
         <div className="col-span-full lg:col-span-8">
-          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">Maybe someones with more experience will help? If you’re lucky, you have a mentor. This is someone who is further along in their career or life than you who can share their personal experience. But if you’re reading this, chances are that didn’t work either. Mentors are an excellent resource for learning from someone else’s experience. This is useful when you’re building a hard skill and want an example of how it can be done well. But this isn’t helpful when you’re not sure what you need to improve or what you want in the first place. And very rarely does someone else’s experience lead to profound insight for you.</p>
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-relaxed">Maybe someone with more experience will help? If you’re lucky, you have a mentor. This is someone who is further along in their career or life than you who can share their personal experience. But if you’re reading this, chances are that didn’t work either. Mentors are an excellent resource for learning from someone else’s experience. This is useful when you’re building a hard skill and want an example of how it can be done well. But this isn’t helpful when you’re not sure what you need to improve or what you want in the first place. And very rarely does someone else’s experience lead to profound insight for you.</p>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">This is why the top performers work with a coach.</p>
           <h1 className="text-black text-5xl md:max-w-screen-sm font-bold mb-8 text-opacity-90 mt-10 leading-tight">Your dyanmic partner</h1>
           <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">They want someone who will know them inside and out. Because the most profound insight comes not from advice but from thoughtful questions. And this is what I do extremely well as a coach: I ask really good questions. I ask questions because that’s how we’ll uncover the answers nobody else has been able to provide. The truth is, you have the right answers already locked inside. You just need someone who understands you and asks the right questions.</p>
@@ -191,21 +191,23 @@ export default function Coaching() {
                 <li>6 hours of coaching</li>
                 <li>3 month commitment</li>
                 <li>10% price discount</li>
-                <li>Payment in full or amortized</li>
+                <li>Payment in full or monthly</li>
               </ul>
               <a className="text-tertiary-600 font-medium" href="/contact">I'm interested</a>
             </div>
             <div className="col-span-full sm:col-span-1">
-              <div className="font-bold text-black text-opacity-90 mb-2">Month-to-month</div>
+              <div className="font-bold text-black text-opacity-90 mb-2">Focused package</div>
               <ul className="list-disc text-black text-opacity-75 list-inside mb-4">
-                <li>1-2 hours per month</li>
-                <li>No contract</li>
-                <li>Cancel anytime</li>
-                <li>Charged monthly</li>
+                <li>12 hours of coaching</li>
+                <li>3 month commitment</li>
+                <li>20% price discount</li>
+                <li>Payment in full or monthly</li>
               </ul>
               <a className="text-tertiary-600 font-medium" href="/contact">I'm interested</a>
             </div>
           </div>
+
+          <p className="text-xl text-black text-opacity-75 mb-10 leading-normal">After the initial three months together, coaching continues month-to-month with no commitment. This gives you the flexability to continue as needed.</p>
 
           <div className="border-gray-200 py-8 md:flex justify-between items-center gap-x-14">
             <div>
