@@ -182,7 +182,7 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-x-2 gap-y-10 md:gap-y-14 md:gap-x-10 max-w-screen-xl mx-auto px-6 lg:px-14 xl:px-6">
           <div className="col-span-full lg:col-span-6 flex items-center">
             <div>
-              <h3 className="text-lg font-bold text-secondary-500 text-opacity-80 mb-3">Coming soon</h3>
+              <h3 className="text-lg font-bold text-secondary-500 text-opacity-80 mb-3">Community builder</h3>
               <h2 className="text-4xl text-black text-opacity-90 font-bold mb-6">Meet leaders like you.</h2>
               <p className="text-black text-opacity-60 text-lg mb-6 font-medium">Join this exclusive leadership incubator that includes virtual lectures, a peer community, and personalized coaching.</p>
               <a href="https://forms.gle/REkFDEUQkaB59zbC6"><button className="border border-secondary-500 bg-secondary-50 bg-opacity-90 px-5 py-2 text-sm font-medium rounded-full tracking-wide text-secondary-500 transform transition hover:-translate-y-0.5 hover:bg-opacity-100 hover:scale-105">Join the waitlist</button></a>
